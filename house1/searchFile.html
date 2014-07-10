@@ -1,0 +1,1613 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>朝阳小区信息，北京朝阳房价，朝阳楼盘信息-搜房网</title>
+    <meta name="keywords" content="朝阳小区信息，北京朝阳房价，朝阳楼盘信息"/>
+    <meta name="description" content="搜房网为您提供海量的朝阳小区信息，小区房价，小区详情，周边配套，实景图，户型图，专业客观反映朝阳房价走势，为您选购北京二手房提供全方位参考。"/>
+    <link rel="stylesheet" type="text/css" href="http://img.soufun.com/secondhouse/image/esfnew/styles/housing/house20140403.css?v=3.20140630" />
+    <link href="http://img.soufun.com/secondhouse/image/Styles/head.css?v=3.20140630" type="text/css" rel="stylesheet" />
+    <script type="text/javascript">        var jsShortDomain = 'soufun.com';</script>
+    <script type="text/javascript" src="http://img.soufun.com/secondhouse/image/esfnew/scripts/xmlHttp.js?v=3.20140630"></script>
+    <script type="text/javascript" src="http://img.soufun.com/secondhouse/image/esfnew/scripts/image.js?v=3.20140630"></script>
+    <script type="text/javascript" src="http://img.soufun.com/secondhouse/image/esfnew/scripts/jquery/jquery1.4.2.js?v=3.20140630"></script>
+    
+        <style type="text/css">
+.box{width:248px;height:auto;overflow:hidden;}
+.box li{line-height:24px;height:24px;width:228px;overflow:hidden;}
+.box a{color:#0053DF; text-decoration:none;}
+.box a:hover{color:#f30; text-decoration:underline;}
+
+/*小搜索2011.3.29 input*/
+.box .search_input{float:left;height:22px;margin:5px 0; padding-left:10px;}
+.box .search_input .inp2{float:left;width:2px;height:22px;background:url(http://img.soufun.com/secondhouse/image/searchbj.gif) no-repeat right 0px;position:absolute;top:0px;right:-1px;}
+.box .search_input .inp1{float:left;height:22px;position:relative;}
+.box .search_input .inp1 input{float:left;height:22px;line-height:22px;width:108px;padding-left:7px;overflow:hidden;background:url(http://img.soufun.com/secondhouse/image/searchbj.gif) repeat-x 0px 0px;font-size:12px;color:#888;border:0px;}
+.box .search_input span .button1{float:left;width:50px;height:22px;line-height:22px;border:0px;cursor:pointer;background:url(http://img.soufun.com/secondhouse/image/searchbj2.gif) no-repeat -72px 0;margin-left:5px;}
+.box .search_input span .button2{float:left;width:50px;height:22px;line-height:22px;border:0px;cursor:pointer;background:url(http://img.soufun.com/secondhouse/image/searchbj2.gif) no-repeat -72px -24px;margin-left:4px;}
+
+ #houselist .shequName{ margin:0 5px;}
+ #houselist .shequName a{ font-size:12px; font-weight:normal; padding:0;}
+ .dh{ font: 12px/18px "宋体";padding:0 11px;width:930px; margin:0 auto 5px; clear:both; line-height:20px;} 
+ .dh1{ margin-bottom:10px;}
+ .dh a{color: #0053DF;margin: 0px 3px;}
+</style>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="http://img.soufun.com/secondhouse/image/esfnew/styles/floating/floating.css" />
+<!--floating star-->
+<div class="floating">
+     <div id="floatDiv">
+         <div class="rel">
+	      <a id="" class="imgApp" title="下载App" onclick="showDbox(1)" href="javascript:void(0)"></a>
+	      <!--ewm star-->
+		   <div  id="dbox_1" class="ewm-bg"   >
+			 <p class="txt">随时随地找房</p>
+			 <p><img width="82" height="82" src="http://img.soufun.com/secondhouse/image/Styles/images/ewm.gif"></p>
+			 <a onclick="hiddenDbox(1)" href="javascript:void(0)" class="icoClse"></a>
+		   </div>
+		   <!--ewm end-->
+	 </div>
+         <a id="" class="imgSale" title="我要卖房" href="/newsecond/nonamesale/checkinhouse.aspx" target="_blank"></a>
+         
+	     <a id="" class="imgPG" target="_blank" title="我要评估" href="http://pinggu.soufun.com/"></a>
+         
+         <a id="" href="http://8.soufun.com/goufang/ls/" target="_blank" title="我要贷款" class="imgLoan"></a>
+         
+	 </div>
+	 <a id="floatingup" class="imgUP" title="返回顶部" href="#" style="display:none"></a>
+</div>
+<script type="text/javascript">
+            function changeWindowWidth() {
+                var w = document.documentElement.clientWidth; //获取页面可见高度
+                if (Number(w) < 1200) {
+                    document.getElementById("floatDiv").style.display = 'none';
+                }
+                else {
+                    document.getElementById("floatDiv").style.display = '';
+                }
+            }
+            jQuery(function () { changeWindowWidth() });
+            jQuery(window).bind("resize", function () { changeWindowWidth(); });
+    function showDbox(index) {
+        var obj = document.getElementById("dbox_" + index);
+        obj.style.display = '';
+        if (index == 1) {
+            hiddenDbox(2);
+        }
+        else {
+            hiddenDbox(1);
+        }
+    }
+    function hiddenDbox(index) {
+        var obj = document.getElementById("dbox_" + index);
+        obj.style.display = 'none';
+    }
+    jQuery(window).scroll(function () {
+         var fold = jQuery(window).height() + jQuery(window).scrollTop();
+         var w = document.documentElement.clientHeight; //获取页面可见高度
+         if(fold>w)
+         {
+            jQuery("#floatingup").css("display","");
+         }
+         else
+         {
+           jQuery("#floatingup").css("display","none");
+         }
+    })
+</script>
+<!--floating end-->
+
+    <script>        var str = ""; var district = ''; var purpose = ''; var room = ''; var k = ''; var pricemin = ''; var pricemax = ''; var comerea = ''; ; var IsTriRa = '0'; var url = 'soufun.com';</script>
+    
+    <!--首页头文件开始-->
+    <script type="text/javascript">
+    var city = '北京';
+    var shortcity = 'bj';
+
+    if (shortcity == "NJ") {
+        shortcity = "nanjing";
+    }
+    if (shortcity == "ty") {
+        shortcity = "taiyuan";
+    }
+    if (shortcity == "SHAOXING") {
+        shortcity = "sx";
+    }
+    if (shortcity == "cc") {
+        shortcity = "changchun";
+    }
+    var BBsDomain = 'http://bbs.soufun.com';
+    var clickid = "esf" + shortcity + "_";
+    var imgurl = 'http://img.soufun.com';
+    var jsShortDomain = 'soufun.com';
+</script>
+<div class="topheader">
+    <dl id="navself1">
+    <dt><a href="http://www.soufun.com" target="_blank" id="esf_B01_01">搜房首页</a><span style="color:Red;display:none;">新版</span> | <a href="http://www.soufun.com/news/" target="_blank" id="esf_B01_02">资讯</a> | <a href="http://www.soufun.com/house/" target="_blank" id="esf_B01_03">新房</a> <a href="/"  target="_blank" id="esf_B01_04">二手房</a> <a href="http://zu.soufun.com"  target="_blank" id="esf_B01_05">租房</a> | <a href="http://home.soufun.com/" target="_blank" id="esf_B01_06">装修</a><a href="http://home.soufun.com/" target="_blank" id="esf_B01_06">家居</a> | <a href="http://bbs.soufun.com" target="_blank" id="esf_B01_07">业主论坛</a> | <a href="http://fdc.soufun.com/" target="_blank" id="esf_B01_08">地产数据</a> </dt><dd> <span id="loginBar"></span> <a id="esf_B01_11" href="javascript:AddFavorite();">收藏</a> | <a href='http://agent.soufun.com/' target="_blank" id="esf_B01_12">搜房帮登录</a> 客服<span class="orange">400-630-6888</span> | <a href="http://esf1.soufun.com/" target='_blank' id="esf_B01_13">北京</a> <a href="http://esf.sh.soufun.com/" target='_blank' id="esf_B01_14">上海</a> <a href="http://esf.gz.soufun.com/" target='_blank' id="esf_B01_15">广州</a> <a href="http://esf.sz.soufun.com/" target='_blank' id="esf_B01_16">深圳</a> <a id="esf_B01_17" href="http://www.hkproperty.com/" target='_blank' >香港</a> <a href="http://esf.soufun.com/newsecond/esfcities.aspx" target='_blank' id="esf_B01_18">[310城市]</a></dd>
+    </dl>
+</div>
+<!--UV code begin-->
+<script type="text/javascript">
+    try{
+        var _dctc = _dctc || {};
+        _dctc._account = _dctc._account || ['UA-24140496-1', 'UA-24830445-1', 'UA-24830738-1'];
+        _dctc.bid = 12;
+        _dctc.isNorth = _dctc.isNorth || 'Y';
+        (function () {
+            var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+            script.src = 'http://js.soufunimg.com/count/load.min.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+        })();
+    }
+    catch(e) {}
+</script>
+<!--UV code end-->
+
+    <!--首页头文件结束-->
+    <!--搜索头文件开始-->
+      <div class="soufunsearch110615" style="margin-top:30px;margin-bottom:21px;">
+	<div class="soufunsearch110615logo"><a href="http://www.soufun.com/" id="esf_B01_19" target="_blank"><img src="http://img.soufun.com/rent/image/logo1.gif" alt="" id="esfbj_118"/></a></div>
+    	<div class="soufunsearch110615city" id="esfbj_119" style="position: relative;z-index:1001">
+		<p>北京</p>
+		<p class="zilink">[<a id="moreBoxcitylink" href="javascript:;" onmousedown="document.getElementById('moreBoxcity').style.display = 'block';">切换</a>]</p>
+          	<dl class="morecity blue" id="moreBoxcity" style="display:none;" onmouseover="showMoreBoxto()" onmouseout="hiddenMoreBoxto()">
+    <dd><a href="http://esf1.soufun.com/">北京</a></dd><dd><a href="http://esf.sh.soufun.com/">上海</a></dd><dd><a href="http://esf.gz.soufun.com/">广州</a></dd><dd><a href="http://esf.sz.soufun.com/">深圳</a></dd><dd><a href="http://esf.tj.soufun.com/">天津</a></dd><dd><a href="http://esf.cd.soufun.com/">成都</a></dd><dd><a href="http://esf.cq.soufun.com/">重庆</a></dd><dd><a href="http://esf.wuhan.soufun.com/">武汉</a></dd><dd><a href="http://esf.suzhou.soufun.com/">苏州</a></dd><dd><a href="http://esf.hz.soufun.com/">杭州</a></dd><dd><a href="http://esf.nanjing.soufun.com/">南京</a></dd><dd><a href="http://esf.jn.soufun.com/">济南</a></dd><dd><a href="http://esf.sjz.soufun.com/">石家庄</a></dd><dd><a href="http://esf.xian.soufun.com/">西安</a></dd><dd><a href="http://esf.zz.soufun.com/">郑州</a></dd><dd><a href="http://esf.wuxi.soufun.com/">无锡</a></dd><dd><a href="http://esf.qd.soufun.com/">青岛</a></dd><dd><a href="http://esf.nc.soufun.com/">南昌</a></dd><dd><a href="http://esf.dg.soufun.com/">东莞</a></dd><dd><a href="http://esf.dl.soufun.com/">大连</a></dd><dd><a href="http://esf.km.soufun.com/">昆明</a></dd><dt><a href="/newsecond/esfcities.aspx" target="_blank">更多城市&gt;&gt;</a></dt>
+	<div class="clear"></div>
+	</dl>
+  <script type="text/javascript">
+      var citychange = document.getElementById("moreBoxcity");
+      var timeout;
+      function hiddenMoreBoxto() {
+          citychange.style.display = "none";
+          timeout = setTimeout("hiddenMoreBoxto", 100)
+      }
+      function showMoreBoxto() {
+          window.clearTimeout(timeout);
+          citychange.style.display = "";
+      }
+        </script>
+	</div>
+    <div class="soufunsearch110615right">
+      <div class="soufunsearch110615rightnav">
+      <div class="navtd">
+			
+            <a  target="_blank"  href="http://soufun.com/house/web/Search_Result.php" id="esfbj_18">新房</a>
+            
+		</div>
+ 		<div class="navtdup"><a id="esf_B01_22" target="_blank">二手房</a></div>
+			<div class="navtd"> <a name="LinkRentButton"  target="_blank"   id="esfbj_19">
+                    租房</a> </div>
+        <div class="navtd"><a id="esfbj_56" href="http://www.youtx.com/" target="_blank">短租</a></div>
+        <div class="navtd"><a href="http://home.soufun.com/"  target="_blank"   id="esfbj_20" >装修家居</a></div>
+        
+        <div class="navtd"><a name="LinkShopButton" target="_blank" id="esfbj_033" >商铺</a></div>
+        
+        <div class="navtd"><a name="LinkOfficeButton" target="_blank" id="esfbj_034" >写字楼</a></div>
+        
+			<div class="navtd">
+                <a id="esfbj_24" name="LinkMapButton" target="_blank">地图</a>
+			</div>
+			
+        <div class="navtd" style="position:relative;z-index:999;left:60px;"><a href="#" onmouseout="hidden_moreBoxto(1112)" onmouseover="moreBoxto(1112)"><em>更多</em></a>
+          <div class="more0413pm" onMouseOut="hidden_moreBoxto(1112)" onMouseOver="show_moreBoxto(1112)" id="moreBox1112" style="display:none;">
+            <ul  >
+              <li><a href="http://bbs.soufun.com" target="_blank" id="esfbj_122">业主论坛</a></li>
+              
+              <li><a id="esf_B04_03" target="_blank" href="http://soufun.com/news/">资讯</a></li>
+              
+              <li><a id="esfbj_0260" target="_blank" href='http://www.soufun.com/ask/esf/bj'>问答</a></li>
+              
+              <li><a id="esf_B04_04" target="_blank" href="http://search.soufun.com/images/">图片</a></li>
+              
+              <li><a id="esfbj_055" href="http://search.soufun.com/so/" target="_blank">综合搜索</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="soufunsearch110615rightform">
+        <form id="form_esf" name="form_esf" onsubmit="form_before_action1();return form_action1()" action="/newsecond/sale_info/searchlist_new2.aspx" method="get">
+      		<div class="tr01">
+            <span id="www_298" >
+				<input type="text" id="input_keyw1" maxlength="70" style="padding-left: 26px;"; class="inputstyle_out" value="输入关键字(楼盘名或地段名)" onkeydown="searchInputOnKeyDown2();"
+				autocomplete= "off"   onmouseover="this.className='inputstyle_move'" onmouseout="this.className='inputstyle_out'" onfocus="if(this.value=='输入关键字(楼盘名或地段名)')this.value ='';" onblur="if(this.value == '')this.value = '输入关键字(楼盘名或地段名)';" />
+                <span class="inpbj"></span>
+				</span>
+                 <span id="www_299" style="margin-left: -20px;">
+				<input type="submit" id="esf_B01_32" value=""  class="button" />
+                </span>
+			</div>
+   	<div style="position: absolute;z-index:50;float:left;">
+                <table id="Suggestion" bgcolor="#FFFFFF" cellpadding="4" cellspacing="0" border="0"
+                    style="border: 1px solid #666666; position: absolute; z-index: 100; display: none;"
+                    class="search_select">
+                    <tbody>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+          <div class="tr02" style="*padding-top:3px;">
+         		    <input type="hidden" id="strCity1" name="city" value="北京" />
+                    <input type="hidden" id="strDistrict1" name="district" />
+                    <input type="hidden" id="strPurpose1" name="purpose" />
+                    <input type="hidden" id="strRoom1" name="room" />
+                    <input type="hidden" id="strPriceMin1" name="pricemin" />
+                    <input type="hidden" id="strPriceMax1" name="pricemax" />
+                    <input type="hidden" id="strTrackLine1" name="trackLine" />
+                    <input type="hidden" id="strKeyword1" name="keyword" />
+                    <input type="hidden" id="renTtype11" name="renttype" />
+                    <input type="hidden" id="strCity11" name="strCity" value="北京" />
+                    <input type="hidden" id="strDistrict11" name="strDistrict" />
+                    <input type="hidden" id="strPrice11" name="Strprice" />
+                    <input type="hidden" id="strNameKeyword11" name="StrNameKeyword" />
+                    <input type="hidden" id="houseType111" name="houseType" />
+                    <input type="hidden" id="isnewhouse" name="isnewhouse" value="0" />
+                    <input type="hidden" id="isFinder" name="isFinder" value="0" />
+         <div id="esf_B01_33">
+                <a href="javascript:;" target="_self" class="menubarnew" style="cursor:pointer;" id="strDistrictnew_a" >区县/地铁</a>
+                  <div id="_divCityShow" class="showsearchdiv">
+                   <div style="color:#FF7F00;font-weight:bold;padding-left:5px;">按区县查询</div>
+                   <div class="showitem"  id="div_districtlist">
+                    <table id="table_districtlist">
+                    </table>
+                   </div>
+                  </div>
+                </div>
+         <div id="esf_B01_34">
+				<a href="javascript:;" target="_self" class="menubarnew" style="cursor:pointer;" id="strPurposenew_a" >住宅</a>
+				 <div id="_divPurposeShow" class="showsearchPurpose">
+				   <div class="showitempurpose" id="div_purpose"></div>
+				  </div>
+				</div>
+     	 <div id="esf_B01_35">
+				  <a href="javascript:;" target="_self" class="menubarnew" style="cursor:pointer;" value=''  id="strPricenew_a" >价格范围</a>
+				  <input type="hidden" value='' id="strPricenew_v" />
+				  <div id="_divPriceShow" class="showsearchPrice">
+				       <div style="color:#FF7F00;font-weight:bold;padding-left:5px;" id="div_unit">总价(元/月)</div>
+				       <div class="showitemprice"  id="div_price"></div>		   
+				       <div style="margin:3px;">
+				       <div style="display:inline;float:left;">
+				       <input type="text" class="searchInput" id="search_priceMin" /> - <input type="text" class="searchInput" id="search_priceMax" />
+				       </div><div style="cursor:pointer;display:inline;float:left;margin-left:3px;margin-bottom:3px;" id="btn_PriceConfirm"> <img id="btn_PriceConfirm" src="http://img.soufun.com/rent/image/btn-confirm.png" alt="确定" /></div>
+				       </div>
+				  </div>
+				</div>
+         <div id="esf_B01_36">
+				  <a href="javascript:;" target="_self" class="menubarnew" style="cursor:pointer;" id="strRoomnew_a" >居室</a>
+				  <input type="hidden" value='' id="strRoomnew_v" />
+				  <div id="_divRoomShow" class="showsearchRoom">
+				    <div class="showitempurpose" id="div_room"></div>
+				  </div>
+				</div>
+           <span class="mobile" ><a id="esf_B01_39" href="http://wap.soufun.com/xc/index.php?come=ad1.1" target="_blank" >手机搜房</a></span>
+            
+            <span class="searchmap" id="esfbj_125"><a target="_blank" id="IsMapSearchClick">在地图上找</a></span>
+            <input name="IsMapSearch" type="checkbox" id="IsMapSearch" class="checkbox" style="display:none" />
+             	
+		
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+<style type="text/css">
+ .morecity{width:256px; background:#fff; border:1px solid #d0d0d0; font:12px/24px "宋体";padding:10px 0 10px 9px;overflow:hidden;z-index:999;position:absolute;left:6px;}
+.morecity dd{width:46px; height:26px;margin-right:4px; display:inline;float:left;overflow: hidden;}
+.morecity dd a{ padding:4px 5px; text-decoration:none}
+.morecity dd a:hover{background:#0066C4; color:#fff; }
+.morecity dt{ float:right;padding-right:25px;}
+</style>
+<script type="text/javascript">
+    function form_before_action1() {
+        var searchKeyword = document.getElementById("input_keyw1").value;
+        if (searchKeyword == '输入关键字(楼盘名或地段名)' || searchKeyword.replace(/^\s*/, '') == '输入关键字(楼盘名或地段名)') {
+            document.getElementById("input_keyw1").value = '';
+        }
+        if (searchKeyword == '' || searchKeyword == 'undefined' || searchKeyword == '输入关键字(小区或地段)' || searchKeyword.replace(/^\s*/, '') == '输入关键字(楼盘名或地段名)') {
+            document.getElementById("strKeyword1").value = '';
+            document.getElementById("strNameKeyword11").value = '';
+        } else {
+            document.getElementById("strKeyword1").value = searchKeyword;
+            document.getElementById("strNameKeyword11").value = searchKeyword;
+        }
+    }
+    if (typeof (k) != 'undefined') {
+        if (k != '' && k != null) {
+            document.getElementById("input_keyw1").value = k;
+        }
+    }
+</script>
+    <!--搜索头文件结束-->
+    <div class="clear">
+    </div>
+    <!--nav20120416 begin-->
+<div class="nav20120416">
+  <dl>
+    <dd ><a href="/" id="esf_B02_01" target="_blank" ><span>首 页</span></a></dd>
+    <dd ><a id="esf_B02_02" href="/house/"><span>出售房源</span></a></dd>
+    <dd ><a id="esf_B02_03" href="/house/a21/"><span>个人房源</span></a></dd>
+    <dd class='li_on'><a id="esf_B02_04" target="_blank" href="/housing/"><span>小区找房</span></a></dd>
+    <dd ><a id="esf_B02_05" target="_blank" href="/agenthome/"><span>经纪人</span></a></dd>
+    <dd><a id="esf_B02_06" target="_blank" href='http://8.soufun.com/'><span>房贷</span></a></dd>
+    
+    <dd><a id="esf_B02_07" target="_blank" href='http://pinggu.soufun.com/'><span>房产评估</span></a></dd>
+    
+    <dd><a id="esf_B02_15" target="_blank" href='/newsecond/news/'><span>资讯</span></a></dd>
+    <dd ><a id="esf_B02_09" target="_blank" href="/qiugou/" ><span>求购</span></a></dd>
+        
+         <dd ><a id="esf_B02_14" target="_blank" href="/villa/" ><span>别墅</span></a></dd>
+        
+    <dt><a id="esf_B02_10" target="_blank" href="http://zu.soufun.com/">租房网</a><a id="esf_B02_11" target="_blank"  href='http://shop.soufun.com/'>商铺网</a><a id="esf_B02_12" target="_blank"  href='http://office.soufun.com/'>写字楼网</a><a id="esf_B02_13" target="_blank" href="http://mall.soufun.com/"><strong>搜房网店</strong></a></dt>
+  </dl>
+</div>
+<!--nav20120416 end-->
+    <div class="dh dh1">
+        <a href="http://www.soufun.com/" target="_blank">搜房网</a>&gt;<a href="/house/" target="_blank">北京二手房</a>&gt;<a href="/housing/" target="_blank">北京小区</a>&gt;<a href='/housing/1__0_0_0_0_1_0_0/' target='_blank'>朝阳小区</a>
+    </div>
+    <!--搜索部分-->
+       <script >    initLoginWindowdef();</script>
+<script>
+    var esfRedirectUrl = '/NewSecond/sale_info/EsfRedirectToOtherChannel.aspx';
+    var rentRedirectUrl = 'http://zu.soufun.com/rent/rent_info/searchlist_other.aspx';
+</script>
+<script type="text/javascript" language="javascript" src="http://img.soufun.com/secondhouse/image/js/%b1%b1%be%a9_SaleCity.js?v=3.20140630"></script>
+<scroller element="CompareFrame" left="document.documentElement.clientWidth-document.getElementById('CompareFrame').offsetWidth-5" top="document.documentElement.clientHeight-document.getElementById('CompareFrame').offsetHeight-5"> </scroller>
+<script type="text/javascript" src="http://img.soufun.com/secondhouse/image/esfnew/scripts/Root.Scroller.js?v=3.20140630"></script>
+<script type="text/javascript" src="http://img.soufun.com/secondhouse/image/esfnew/scripts/Root.ComboBoxNew.js?v=3.20140630"></script>
+<script type="text/javascript" src="http://img.soufun.com/secondhouse/image/esfnew/scripts/SuggestionNew2011.js?v=3.20140630"></script>
+<script type="text/javascript">
+    function $(str) { return document.getElementById(str); }
+    function jQuery(str) { return document.getElementById(str); } 
+</script>
+<script type="text/javascript" src="http://img.soufun.com/secondhouse/image/esfnew/scripts/jquery/jquery1.4.2.js?v=3.20140630"></script>
+<script type="text/javascript" src="http://img.soufun.com/secondhouse/image/esfnew/scripts/SearchResultNew2011.js?v=3.20140630"></script>
+<script type="text/javascript" src="http://img.soufun.com/secondhouse/image/esfnew/scripts/ChannelJumpRedirect.js?v=3.20140630"></script>
+ <script type="text/javascript">
+     jQuery(function () {
+         jQuery("#IsMapSearch").removeAttr("checked");
+         jQuery("#IsMapSearchClick").css({ "cursor": "pointer" });
+         jQuery("#IsMapSearchClick").bind("click", function () {
+             jQuery("#IsMapSearch").attr("checked", "true");
+             jQuery("#form_esf").attr("target", "_blank");
+             jQuery("#form_esf").submit();
+             jQuery("#form_esf").attr("target", "_self");
+             jQuery("#IsMapSearch").removeAttr("checked");
+         });
+         jQuery("[name='LinkMapButton']").bind("click", function () {
+            jQuery("#IsMapSearch").attr("checked", "true");
+             jQuery("#form_esf").attr("target", "_blank");
+             jQuery("#form_esf").submit();
+             jQuery("#form_esf").attr("target", "_self");
+             jQuery("#IsMapSearch").removeAttr("checked");
+         });
+     });
+</script>
+    <div id="wrap">
+        
+
+<style type="text/css">
+    .set input{border:1px solid #ddd; padding:4px 1px 3px; background:#fff; vertical-align:middle;width:35px;}
+    .w_tip{width:154px;font-size:12px; color:#333; line-height:19px; text-align:left}
+    .w_tip .top{height:5px; overflow:hidden;background:url(http://img.soufun.com/secondhouse/image/newhousesearch/tip_bk.gif) 0 0 no-repeat}
+.w_tip .bottom{padding:10px; padding-top:0;background:url(http://img.soufun.com/secondhouse/image/newhousesearch/tip_bk.gif) 0 100% no-repeat}
+</style>
+
+<script type="text/javascript" src="http://img.soufun.com/secondhouse/image/esfnew/scripts/jquery/jquery1.4.2.js?v=3.20140630"></script>
+<script type="text/javascript" language="javascript">
+    var pricemin = '0';
+    var pricemax = '0';
+    var urlparams = '1__1_0_0_0_1_0_0';
+    var kwd = '';
+</script>
+<script type="text/javascript" src ="http://img.soufun.com/secondhouse/image/esfnew/scripts/newsearch/xiaoquhouse.js?v=3.20140630"></script>
+
+
+    <div class="btu-search"><a class='btuon' id='list_36'><strong class='qycx'>按区域查询</strong></a><a href='/housing/__0_0_0_0_1_0_1/' id='list_37'><strong class='bjdtcx'>按地铁查询</strong></a><a href='/housing/__0_0_0_0_1_0_2/' id='list_112'><strong class='xxcx'>按环线查询</strong></a><div class="btn_gomap floatl" id="list_113">
+        <a href="/map/" target="_blank" rel="nofollow">切换到地图搜索</a></div>
+        </div>
+
+<ul id="search">
+<li id="hlist_21">
+    <span>区域：</span><a class="" href="/housing/__0_0_0_0_1_0_0/">不限</a><a class="orange" href="/housing/1__1_0_0_0_1_0_0/">朝阳</a><a class="" href="/housing/0__1_0_0_0_1_0_0/">海淀</a><a class="" href="/housing/6__1_0_0_0_1_0_0/">丰台</a><a class="" href="/housing/2__1_0_0_0_1_0_0/">东城</a><a class="" href="/housing/3__1_0_0_0_1_0_0/">西城</a><a class="" href="/housing/4__1_0_0_0_1_0_0/">崇文</a><a class="" href="/housing/5__1_0_0_0_1_0_0/">宣武</a><a class="" href="/housing/7__1_0_0_0_1_0_0/">石景山</a><a class="" href="/housing/12__1_0_0_0_1_0_0/">昌平</a><a class="" href="/housing/585__1_0_0_0_1_0_0/">大兴</a><a class="" href="/housing/10__1_0_0_0_1_0_0/">通州</a><a class="" href="/housing/11__1_0_0_0_1_0_0/">顺义</a><a class="" href="/housing/8__1_0_0_0_1_0_0/">房山</a><a class="" href="/housing/13__1_0_0_0_1_0_0/">密云</a><a class="" href="/housing/9__1_0_0_0_1_0_0/">门头沟</a><a class="" href="/housing/14__1_0_0_0_1_0_0/">怀柔</a><a class="" href="/housing/15__1_0_0_0_1_0_0/">延庆</a><a class="" href="/housing/16__1_0_0_0_1_0_0/">平谷</a><a class="" href="/housing/987__1_0_0_0_1_0_0/">燕郊</a><a class="" href="/housing/11817__1_0_0_0_1_0_0/">北京周边</a>
+  </li>       
+    <li class="shangquan"><a class="orange" href="/housing/1__1_0_0_0_1_0_0/">不限</a><strong class="orange">A</strong><a class="" href="/housing/1_2653_1_0_0_0_1_0_0/">安慧桥</a><a class="" href="/housing/1_1121_1_0_0_0_1_0_0/">安贞</a><a class="" href="/housing/1_2652_1_0_0_0_1_0_0/">奥林匹克公园</a><strong class="orange">B</strong><a class="" href="/housing/1_4512_1_0_0_0_1_0_0/">百子湾</a><a class="" href="/housing/1_2324_1_0_0_0_1_0_0/">北工大</a><a class="" href="/housing/1_369_1_0_0_0_1_0_0/">北沙滩</a><a class="" href="/housing/1_3114_1_0_0_0_1_0_0/">北苑</a><strong class="orange">C</strong><a class="" href="/housing/1_5510_1_0_0_0_1_0_0/">CBD</a><a class="" href="/housing/1_2651_1_0_0_0_1_0_0/">常营</a><a class="" href="/housing/1_5755_1_0_0_0_1_0_0/">朝青</a><a class="" href="/housing/1_53_1_0_0_0_1_0_0/">朝阳公园</a><a class="" href="/housing/1_2650_1_0_0_0_1_0_0/">朝阳门</a><strong class="orange">D</strong><a class="" href="/housing/1_2318_1_0_0_0_1_0_0/">大山子</a><a class="" href="/housing/1_2649_1_0_0_0_1_0_0/">大望路</a><a class="" href="/housing/1_371_1_0_0_0_1_0_0/">定福庄</a><a class="" href="/housing/1_46_1_0_0_0_1_0_0/">东八里庄</a><a class="" href="/housing/1_2648_1_0_0_0_1_0_0/">东坝</a><a class="" href="/housing/1_617_1_0_0_0_1_0_0/">东大桥</a><a class="" href="/housing/1_2647_1_0_0_0_1_0_0/">豆各庄</a><strong class="orange">F</strong><a class="" href="/housing/1_2120_1_0_0_0_1_0_0/">垡头</a><strong class="orange">G</strong><a class="" href="/housing/1_5497_1_0_0_0_1_0_0/">甘露园</a><a class="" href="/housing/1_2646_1_0_0_0_1_0_0/">高碑店</a><a class="" href="/housing/1_2645_1_0_0_0_1_0_0/">工体</a><a class="" href="/housing/1_372_1_0_0_0_1_0_0/">管庄</a><a class="" href="/housing/1_2644_1_0_0_0_1_0_0/">广渠门</a><a class="" href="/housing/1_40_1_0_0_0_1_0_0/">国贸</a><a class="" href="/housing/1_35_1_0_0_0_1_0_0/">国展</a><strong class="orange">H</strong><a class="" href="/housing/1_44_1_0_0_0_1_0_0/">红庙</a><a class="" href="/housing/1_3928_1_0_0_0_1_0_0/">华威</a><a class="" href="/housing/1_5756_1_0_0_0_1_0_0/">欢乐谷</a><a class="" href="/housing/1_11651_1_0_0_0_1_0_0/">惠新西街</a><strong class="orange">J</strong><a class="" href="/housing/1_2642_1_0_0_0_1_0_0/">建国门</a><a class="" href="/housing/1_47_1_0_0_0_1_0_0/">劲松</a><a class="" href="/housing/1_5047_1_0_0_0_1_0_0/">京广</a><a class="" href="/housing/1_54_1_0_0_0_1_0_0/">酒仙桥</a><a class="" href="/housing/1_12308_1_0_0_0_1_0_0/">健翔桥</a><strong class="orange">L</strong><a class="" href="/housing/1_2641_1_0_0_0_1_0_0/">来广营</a><a class="" href="/housing/1_2640_1_0_0_0_1_0_0/">柳芳</a><strong class="orange">P</strong><a class="" href="/housing/1_375_1_0_0_0_1_0_0/">潘家园</a><strong class="orange">S</strong><a class="" href="/housing/1_5046_1_0_0_0_1_0_0/">三里屯</a><a class="" href="/housing/1_42_1_0_0_0_1_0_0/">三元桥</a><a class="" href="/housing/1_1125_1_0_0_0_1_0_0/">芍药居</a><a class="" href="/housing/1_2121_1_0_0_0_1_0_0/">十八里店</a><a class="" href="/housing/1_2637_1_0_0_0_1_0_0/">石佛营</a><a class="" href="/housing/1_45_1_0_0_0_1_0_0/">十里堡</a><a class="" href="/housing/1_374_1_0_0_0_1_0_0/">双井</a><a class="" href="/housing/1_7196_1_0_0_0_1_0_0/">双桥</a><a class="" href="/housing/1_2635_1_0_0_0_1_0_0/">四惠</a><strong class="orange">T</strong><a class="" href="/housing/1_3113_1_0_0_0_1_0_0/">太阳宫</a><a class="" href="/housing/1_30_1_0_0_0_1_0_0/">团结湖</a><strong class="orange">W</strong><a class="" href="/housing/1_10019_1_0_0_0_1_0_0/">望京</a><strong class="orange">X</strong><a class="" href="/housing/1_1122_1_0_0_0_1_0_0/">西坝河</a><strong class="orange">Y</strong><a class="" href="/housing/1_2633_1_0_0_0_1_0_0/">亚运村小营</a><a class="" href="/housing/1_51_1_0_0_0_1_0_0/">亚运村</a><a class="" href="/housing/1_34_1_0_0_0_1_0_0/">燕莎</a><strong class="orange">Z</strong><a class="" href="/housing/1_4213_1_0_0_0_1_0_0/">左家庄</a></li>  
+<li id="hlist_23">
+    <span>类型：</span><a class="" href="/housing/1__0_0_0_0_1_0_0/">不限</a><a class="orange" href="/housing/1__1_0_0_0_1_0_0/">住宅</a><a class="" href="/housing/1__2_0_0_0_1_0_0/">别墅</a><a class="" href="/housing/1__3_0_0_0_1_0_0/">商铺</a><a class="" href="/housing/1__4_0_0_0_1_0_0/">写字楼</a>
+</li>
+<li id="hlist_22">
+    <span>均价：</span><a class="orange" href="/housing/1__1_0_0_0_1_0_0/">不限</a><a class="" href="/housing/1__1_0_0_10000_1_0_0/">10000以下</a><a class="" href="/housing/1__1_0_10000_15000_1_0_0/">10000-15000</a><a class="" href="/housing/1__1_0_15000_20000_1_0_0/">15000-20000</a><a class="" href="/housing/1__1_0_20000_25000_1_0_0/">20000-25000</a><a class="" href="/housing/1__1_0_25000_30000_1_0_0/">25000-30000</a><a class="" href="/housing/1__1_0_30000_35000_1_0_0/">30000-35000</a><a class="" href="/housing/1__1_0_35000_40000_1_0_0/">35000-40000</a><a class="" href="/housing/1__1_0_40000_50000_1_0_0/">40000-50000</a><a class="" href="/housing/1__1_0_50000_0_1_0_0/">50000以上</a><span class="set"><input type="text" id="pmin" title="请输入最低价格" maxlength="5" size="5" /> - <input type="text" id="pmax" maxlength="5" size="5" title="请输入最高价格" />  <input type="button" id="pconfirm" value="确定" style="cursor: pointer; height: 22px; display:none;" /></span> 
+</li>
+</ul>
+        <div class="main mt15">
+            
+            <ul class="searchbar">
+                <li class="search floatl" id="rentid_60">
+                <div class="search_input">
+                <form id="form1" action="/EsfHouse/Project/list_new.aspx" method="get" target="_self">
+                       <div class="inp1"><input name="keyword" id="keyword" type="text" value="查找小区" size="25" onfocus="javascript:if(this.value.trim()=='查找小区'){this.value='';}" onblur="javascript:if(this.value.trim()==''){this.value='查找小区';}" /><div class="inp2"></div></div>
+                       <span><input id="Submit1" type="submit" value="" class="button_search" /></span><span class="gray9 txt"><a href="/housing/__0_0_0_0_1_0_0/">清空</a></span>
+                       <input type="hidden" name="purpose" value="住宅" />
+    	                <input type="hidden" name="sortby" value="0" />
+    	                <input type="hidden" name="pricemin" value="0" />
+    	                <input type="hidden" name="pricemax" value="0" />
+    	                <input type="hidden" name="district" value="1" />
+    	                <input type="hidden" name="comarea" value="" /> 
+                        <input type="hidden" name="searchtype" value="0"  />
+                </form>
+               </div>               
+                </li>
+                <li class="floatr">
+                <script type="text/javascript">
+                    String.prototype.trim = function String$trim() {
+                        if (arguments.length !== 0) throw Error.parameterCount();
+                        return this.replace(/^\s+|\s+$/g, '');
+                    }
+
+                    function limouseover(obj) {
+                        if (obj.className != "open_selected") {
+                            obj.className = 'open_hover';
+                        }
+                    }
+                    function limouseout(obj) {
+                        if (obj.attributes["selected"] == "true") {
+                            obj.className = 'open_selected';
+                        }
+                        else {
+                            if (obj.className != "open_selected") {
+                                obj.className = 'open';
+                            }
+                        }
+                    }
+                    function dvmouseover(obj, ulid) {
+                        $(ulid).style.display = '';
+                        obj.className = "tag_select_hover";
+                    }
+                    function dvmouseout(obj, ulid) {
+                        $(ulid).style.display = 'none';
+                        obj.className = "tag_select";
+                    }
+                    var timeout;
+                    function hiddenPt(dl) {
+                        var citychange = document.getElementById(dl.id);
+                        citychange.style.display = "none";
+                        timeout = setTimeout("hiddenPt", 100)
+                    }
+                    function showPt(dl) {
+                        var citychange = document.getElementById(dl.id);
+                        window.clearTimeout(timeout);
+                        citychange.style.display = "";
+                    }
+
+                    function LocationHrefReplace(url) {
+                        window.location.href = url;
+                    }
+ </script>
+                    <span class="txt floatl mt3">更多筛选：</span>  
+                    <div id="select_more" class="floatl">
+                           <div class="select_box">                   
+                         <div id="select_info" class="tag_select" onmousemove="dvmouseover(this,'options_buildtime')" onmouseout="dvmouseout(this,'options_buildtime')"
+                    style="cursor: pointer;">
+                    建筑年代</div>
+                               <ul id="options_buildtime" class="tag_options" onmouseout="hiddenPt(this)" onmouseover="showPt(this)" style="position: absolute; display: none;
+                            z-index: 999;">
+                                    <li class="open" style="cursor: pointer;" selected="true" onclick="LocationHrefReplace('/housing/1__1_0_0_0_1_0_0/')" onmouseout="limouseout(this)" onmousemove="limouseover(this)">楼龄不限</li><li class="open" style="cursor: pointer;" selected="true" onclick="LocationHrefReplace('/housing/1__1_0_0_0_1_1_0/')" onmouseout="limouseout(this)" onmousemove="limouseover(this)">1995年前</li><li class="open" style="cursor: pointer;" selected="true" onclick="LocationHrefReplace('/housing/1__1_0_0_0_1_2_0/')" onmouseout="limouseout(this)" onmousemove="limouseover(this)">1995-2000年</li><li class="open" style="cursor: pointer;" selected="true" onclick="LocationHrefReplace('/housing/1__1_0_0_0_1_3_0/')" onmouseout="limouseout(this)" onmousemove="limouseover(this)">2000-2005年</li><li class="open" style="cursor: pointer;" selected="true" onclick="LocationHrefReplace('/housing/1__1_0_0_0_1_4_0/')" onmouseout="limouseout(this)" onmousemove="limouseover(this)">2005-2010年</li><li class="open" style="cursor: pointer;" selected="true" onclick="LocationHrefReplace('/housing/1__1_0_0_0_1_5_0/')" onmouseout="limouseout(this)" onmousemove="limouseover(this)">2010年后</li>
+                               </ul>
+                          </div> 
+                    </div>
+                </li>
+              </ul>
+               <dl class="updown">
+                    <dt class="black">
+                    <div class="floatl" id="selectpx">
+                        <div class="select_box">
+	                       <div id="select_info_Orderby" class="tag_select" onmousemove="dvmouseover(this,'options_Orderbys')" onmouseout="dvmouseout(this,'options_Orderbys')"
+                    style="cursor: pointer;">按二手房源数从多到少排序</div>
+			                    <ul id="options_Orderbys" class="tag_options" onmouseout="hiddenPt(this)" onmouseover="showPt(this)" style="position: absolute; display: none;
+                            z-index: 999;">
+                                <li class="open" style="cursor: pointer;" selected="true" onclick="LocationHrefReplace('/housing/1__1_3_0_0_1_0_0/')" onmouseout="limouseout(this)" onmousemove="limouseover(this)">按楼盘名称排序</li><li class="open" style="cursor: pointer;" selected="true" onclick="LocationHrefReplace('/housing/1__1_1_0_0_1_0_0/')" onmouseout="limouseout(this)" onmousemove="limouseover(this)">按评估均价由高到低排序</li><li class="open" style="cursor: pointer;" selected="true" onclick="LocationHrefReplace('/housing/1__1_2_0_0_1_0_0/')" onmouseout="limouseout(this)" onmousemove="limouseover(this)">按评估均价由低到高排序</li><li class="open" style="cursor: pointer;" selected="true" onclick="LocationHrefReplace('/housing/1__1_0_0_0_1_0_0/')" onmouseout="limouseout(this)" onmousemove="limouseover(this)">按二手房源数从多到少排序</li><li class="open" style="cursor: pointer;" selected="true" onclick="LocationHrefReplace('/housing/1__1_4_0_0_1_0_0/')" onmouseout="limouseout(this)" onmousemove="limouseover(this)">按租房房源数从多到少排序</li><li class="open" style="cursor: pointer;" selected="true" onclick="LocationHrefReplace('/housing/1__1_5_0_0_1_0_0/')" onmouseout="limouseout(this)" onmousemove="limouseover(this)">按评估均价涨幅由高到低</li><li class="open" style="cursor: pointer;" selected="true" onclick="LocationHrefReplace('/housing/1__1_6_0_0_1_0_0/')" onmouseout="limouseout(this)" onmousemove="limouseover(this)">按评估均价涨幅由低到高</li>
+                                </ul>
+                          </div>
+                       </div>
+                          <a href="/housing/1__1_2_0_0_1_0_0/" id="list_52" style="cursor:pointer;" rel="nofollow"><span id="pricesort" class="rank_up" >均价</span></a><a href="/housing/1__1_6_0_0_1_0_0/" id="list_53" style="cursor:pointer;" rel="nofollow"><span class="rank_up"  id="sortsort">涨幅</span></a>
+	                </dt>
+	                <dd>
+                          <p class="floatr fanye"><a rel="nofollow" class="fy_left01"></a><span class="fy_text">1 /82</span><a class="fy_right02" rel="nofollow"  href="/housing/1__1_0_0_0_2_0_0/"></a></p>
+                          <p class="floatr mr18">共搜索到<span class="number orange">1621</span>条</p>
+                    </dd>
+               </dl>
+            <ul id="houselist">
+                
+                    <li id="hlist_1" >
+                        <div class='Llogostyle01' title='中弘北京像素' ><div class='Linfo02'><p class='Lname'>中弘北京像素</p><p class='LMDlogo'><img src='http://img1n.soufunimg.com/agents/2012_05/24/11/bj/newcertificate/1337830184110.jpg' alt='搜房网店' /></p></div><a href='http://beijingxiangsuzh.soufun.com/wangdian/' target='_blank'><div class="Llayertop"></div></a></div>
+                        <div class="pic">
+                            
+                                <a href="http://beijingxiangsuzh.soufun.com/" target="_blank"><img src="http://img3.soufunimg.com/viewimage/agents/2013_11/23/M06/09/09/wKgFqVKQIomIeUiFAAHRuR-GBeYAAOHvAGAuJ8AAdHR422/164x124.jpg" onerror="_missthumbnail(this, 100,75,true)" width="100" height="75" /></a>
+                            
+                        </div>
+                        <dl>
+                            <dt><a href="http://beijingxiangsuzh.soufun.com/" target="_blank">中弘北京像素</a><img src="http://img.soufun.com/secondhouse/image/fangyuandaquan/zhuzhai1.gif"  />  <span class="shequName">[<a href="http://changying.soufun.com/" target="_blank">常营</a>]</span>朝阳区五里桥一街一号院(朝阳北路6号..</dt>
+                            <dd>二手房源：<a class="number" href="/house-xm1010679585/" target="_blank"  >4444 套</a>   租房房源：<a class="number" href="http://zu.soufun.com/house-xm1010679585/" target="_blank" >784 套</a></dd>
+                            <dd><a href="http://beijingxiangsuzh.soufun.com/xiangqing/" target="_blank" class="iconinfo" >查看详情</a>&nbsp;<a href="http://beijingxiangsuzh.soufun.com/photo/1010679585.htm" target="_blank" class="iconpic">小区图片</a>&nbsp;<a href="http://esf.soufun.com/map/?newcode=1010679585 " target="_blank" class="iconmap" >地图位置</a>&nbsp;<a href="http://beijingxiangsuzh.soufun.com/bbs/" target="_blank" class="iconbbs" >业主论坛</a>&nbsp; <a href="http://beijingxiangsuzh.soufun.com/jiage/" target="_blank" class="iconprice">房价走势</a></dd>
+                            
+                        </dl>
+                        
+                        <div class="price" style="margin-top:0;"><a href="http://beijingxiangsuzh.soufun.com/jiage/" target="_blank"><span class=" font16">35034</span>元/㎡</a><br />
+                               
+                                   <span class="green number" title="房价跌幅">↓3.81%</span> 
+                               
+                        </div>
+                        
+                    </li>
+                
+                    <li id="hlist_2" >
+                        <div class='Llogostyle01' title='国美第一城' ><div class='Linfo02'><p class='Lname'>国美第一城</p><p class='LMDlogo'><img src='http://img3n.soufunimg.com/agents/2014_06/23/M06/05/D2/wKgFclOn2U-IYcIjAABDLqCfLG8AAJGTgHMo-4AAENG518.jpg' alt='搜房网店' /></p></div><a href='http://guomeidiyicheng.soufun.com/wangdian/' target='_blank'><div class="Llayertop"></div></a></div>
+                        <div class="pic">
+                            
+                                <a href="http://guomeidiyicheng.soufun.com/" target="_blank"><img src="http://img3n.soufunimg.com/viewimage/agents/2013_11/22/M02/01/5C/wKgFclKO_ZeIZrMkAAFyLSAVB1UAACIIgN06K8AAXJF214/164x124.jpg" onerror="_missthumbnail(this, 100,75,true)" width="100" height="75" /></a>
+                            
+                        </div>
+                        <dl>
+                            <dt><a href="http://guomeidiyicheng.soufun.com/" target="_blank">国美第一城</a><img src="http://img.soufun.com/secondhouse/image/fangyuandaquan/zhuzhai1.gif"  />  <span class="shequName">[<a href="http://chaoqing.soufun.com/" target="_blank">朝青</a>]</span>姚家园青年路115号</dt>
+                            <dd>二手房源：<a class="number" href="/house-xm1010035895/" target="_blank"  >3536 套</a>   租房房源：<a class="number" href="http://zu.soufun.com/house-xm1010035895/" target="_blank" >1168 套</a></dd>
+                            <dd><a href="http://guomeidiyicheng.soufun.com/xiangqing/" target="_blank" class="iconinfo" >查看详情</a>&nbsp;<a href="http://guomeidiyicheng.soufun.com/photo/1010035895.htm" target="_blank" class="iconpic">小区图片</a>&nbsp;<a href="http://esf.soufun.com/map/?newcode=1010035895 " target="_blank" class="iconmap" >地图位置</a>&nbsp;<a href="http://guomeidiyicheng.soufun.com/bbs/" target="_blank" class="iconbbs" >业主论坛</a>&nbsp; <a href="http://guomeidiyicheng.soufun.com/jiage/" target="_blank" class="iconprice">房价走势</a></dd>
+                            <dd >置业专家：<a href="http://esf.soufun.com/a/xiaofengershao" target="_blank" >杨乾锋</a>&nbsp;<a href="http://esf.soufun.com/a/huchangying" target="_blank" >胡长影</a>&nbsp;<a href="http://esf.soufun.com/a/lmaini0903" target="_blank" >柳明</a>&nbsp;</dd>
+                        </dl>
+                        
+                        <div class="price" style="margin-top:0;"><a href="http://guomeidiyicheng.soufun.com/jiage/" target="_blank"><span class=" font16">36951</span>元/㎡</a><br />
+                               
+                                   <span class="green number" title="房价跌幅">↓1.7%</span> 
+                               
+                        </div>
+                        
+                    </li>
+                
+                    <li id="hlist_3" >
+                        <div class='Llogostyle01' title='芍药居北里' ><div class='Linfo02'><p class='Lname'>芍药居北里</p><p class='LMDlogo'><img src='http://img1n.soufunimg.com/agents/2012_07/19/18/bj/newcertificate/1342692399089.jpg' alt='搜房网店' /></p></div><a href='http://shaoyaojubeili.soufun.com/wangdian/' target='_blank'><div class="Llayertop"></div></a></div>
+                        <div class="pic">
+                            
+                                <a href="http://shaoyaojubeili.soufun.com/" target="_blank"><img src="http://img1n.soufunimg.com/viewimage/agents2/2011_12/13/15/77/22/bj/houseinfo/406159949800/164x124.jpg" onerror="_missthumbnail(this, 100,75,true)" width="100" height="75" /></a>
+                            
+                        </div>
+                        <dl>
+                            <dt><a href="http://shaoyaojubeili.soufun.com/" target="_blank">芍药居北里</a><img src="http://img.soufun.com/secondhouse/image/fangyuandaquan/zhuzhai1.gif"  />  <span class="shequName">[<a href="http://shaoyaoju.soufun.com/" target="_blank">芍药居</a>]</span>文学馆路,中煤信息大厦西北侧</dt>
+                            <dd>二手房源：<a class="number" href="/house-xm1010196899/" target="_blank"  >2868 套</a>   租房房源：<a class="number" href="http://zu.soufun.com/house-xm1010196899/" target="_blank" >1423 套</a></dd>
+                            <dd><a href="http://shaoyaojubeili.soufun.com/xiangqing/" target="_blank" class="iconinfo" >查看详情</a>&nbsp;<a href="http://shaoyaojubeili.soufun.com/photo/1010196899.htm" target="_blank" class="iconpic">小区图片</a>&nbsp;<a href="http://esf.soufun.com/map/?newcode=1010196899 " target="_blank" class="iconmap" >地图位置</a>&nbsp;<a href="http://shaoyaojubeili.soufun.com/bbs/" target="_blank" class="iconbbs" >业主论坛</a>&nbsp; <a href="http://shaoyaojubeili.soufun.com/jiage/" target="_blank" class="iconprice">房价走势</a></dd>
+                            <dd >置业专家：<a href="http://esf.soufun.com/a/jwx20040691" target="_blank" >姜维孝</a>&nbsp;<a href="http://esf.soufun.com/a/yyx920115" target="_blank" >杨云新</a>&nbsp;<a href="http://esf.soufun.com/a/lipeng822" target="_blank" >李朋</a>&nbsp;<a href="http://esf.soufun.com/a/lx1978312" target="_blank" >雷霞</a>&nbsp;</dd>
+                        </dl>
+                        
+                        <div class="price" style="margin-top:0;"><a href="http://shaoyaojubeili.soufun.com/jiage/" target="_blank"><span class=" font16">44023</span>元/㎡</a><br />
+                               
+                                   <span class="green number" title="房价跌幅">↓4.7%</span> 
+                               
+                        </div>
+                        
+                    </li>
+                
+                    <li id="hlist_4" >
+                        <div class='Llogostyle01' title='沿海赛洛城' ><div class='Linfo02'><p class='Lname'>沿海赛洛城</p><p class='LMDlogo'><img src='http://img1n.soufunimg.com/agents/2013_08/07/15/bj/newcertificate/1375861195248.jpg' alt='搜房网店' /></p></div><a href='http://yanhaisailuocheng.soufun.com/wangdian/' target='_blank'><div class="Llayertop"></div></a></div>
+                        <div class="pic">
+                            
+                                <a href="http://yanhaisailuocheng.soufun.com/" target="_blank"><img src="http://img1n.soufunimg.com/viewimage/agents1/2012_12/05/18/89/47/bj/houseinfo/400411937800/164x124.jpg" onerror="_missthumbnail(this, 100,75,true)" width="100" height="75" /></a>
+                            
+                        </div>
+                        <dl>
+                            <dt><a href="http://yanhaisailuocheng.soufun.com/" target="_blank">沿海赛洛城</a><img src="http://img.soufun.com/secondhouse/image/fangyuandaquan/zhuzhai1.gif"  />  <span class="shequName">[<a href="http://baiziwan.soufun.com/" target="_blank">百子湾</a>]</span>广渠东路33号(广渠路与百子湾路交汇..&nbsp;<a target="_blank" href="http://yanhaisailuocheng.soufun.com/video/esf/1010067721_2225.htm"><img src="http://img.soufun.com/secondhouse/image/esfnew/images/video/iconVideo.gif" /></a></dt>
+                            <dd>二手房源：<a class="number" href="/house-xm1010067721/" target="_blank"  >2692 套</a>   租房房源：<a class="number" href="http://zu.soufun.com/house-xm1010067721/" target="_blank" >1584 套</a></dd>
+                            <dd><a href="http://yanhaisailuocheng.soufun.com/xiangqing/" target="_blank" class="iconinfo" >查看详情</a>&nbsp;<a href="http://yanhaisailuocheng.soufun.com/photo/1010067721.htm" target="_blank" class="iconpic">小区图片</a>&nbsp;<a href="http://esf.soufun.com/map/?newcode=1010067721 " target="_blank" class="iconmap" >地图位置</a>&nbsp;<a href="http://yanhaisailuocheng.soufun.com/bbs/" target="_blank" class="iconbbs" >业主论坛</a>&nbsp; <a href="http://yanhaisailuocheng.soufun.com/jiage/" target="_blank" class="iconprice">房价走势</a></dd>
+                            <dd >置业专家：<a href="http://esf.soufun.com/a/saleen123" target="_blank" >刘忠存</a>&nbsp;<a href="http://esf.soufun.com/a/sunfuyu45" target="_blank" >孙福玉</a>&nbsp;<a href="http://esf.soufun.com/a/wb13552301697" target="_blank" >王斌</a>&nbsp;<a href="http://esf.soufun.com/a/mtjingxiaofeng" target="_blank" >荆晓锋</a>&nbsp;</dd>
+                        </dl>
+                        
+                        <div class="price" style="margin-top:0;"><a href="http://yanhaisailuocheng.soufun.com/jiage/" target="_blank"><span class=" font16">36987</span>元/㎡</a><br />
+                               
+                                   <span class="green number" title="房价跌幅">↓2.75%</span> 
+                               
+                        </div>
+                        
+                    </li>
+                
+                    <li id="hlist_5" >
+                        <div class='Llogostyle01' title='新城国际' ><div class='Linfo02'><p class='Lname'>新城国际</p><p class='LMDlogo'><img src='http://img1n.soufunimg.com/agents/2012_03/12/17/bj/newcertificate/1331543118079.jpg' alt='搜房网店' /></p></div><a href='http://xinchengguoji.soufun.com/wangdian/' target='_blank'><div class="Llayertop"></div></a></div>
+                        <div class="pic">
+                            
+                                <a href="http://xinchengguoji.soufun.com/" target="_blank"><img src="http://img.soufun.com/viewimage/house/2010_04/13/bj/1271125975330_000/164x124.jpg" onerror="_missthumbnail(this, 100,75,true)" width="100" height="75" /></a>
+                            
+                        </div>
+                        <dl>
+                            <dt><a href="http://xinchengguoji.soufun.com/" target="_blank">新城国际</a><img src="http://img.soufun.com/secondhouse/image/fangyuandaquan/zhuzhai1.gif"  />  <span class="shequName">[<a href="http://guomao.soufun.com/" target="_blank">国贸</a>]</span>朝外大街6号(朝外大街路口南150米路..</dt>
+                            <dd>二手房源：<a class="number" href="/house-xm1010012320/" target="_blank"  >2651 套</a>   租房房源：<a class="number" href="http://zu.soufun.com/house-xm1010012320/" target="_blank" >1466 套</a></dd>
+                            <dd><a href="http://xinchengguoji.soufun.com/xiangqing/" target="_blank" class="iconinfo" >查看详情</a>&nbsp;<a href="http://xinchengguoji.soufun.com/photo/1010012320.htm" target="_blank" class="iconpic">小区图片</a>&nbsp;<a href="http://esf.soufun.com/map/?newcode=1010012320 " target="_blank" class="iconmap" >地图位置</a>&nbsp;<a href="http://xinchengguoji.soufun.com/bbs/" target="_blank" class="iconbbs" >业主论坛</a>&nbsp; <a href="http://xinchengguoji.soufun.com/jiage/" target="_blank" class="iconprice">房价走势</a></dd>
+                            <dd >置业专家：<a href="http://esf.soufun.com/a/hailetongchenhao" target="_blank" >陈洋</a>&nbsp;<a href="http://esf.soufun.com/a/zhanghan2095" target="_blank" >张涵</a>&nbsp;<a href="http://esf.soufun.com/a/billzhang2012" target="_blank" >张昌鑫</a>&nbsp;<a href="http://esf.soufun.com/a/lj15535102155" target="_blank" >田静</a>&nbsp;</dd>
+                        </dl>
+                        
+                        <div class="price" style="margin-top:0;"><a href="http://xinchengguoji.soufun.com/jiage/" target="_blank"><span class=" font16">69630</span>元/㎡</a><br />
+                               
+                                   <span class="green number" title="房价跌幅">↓1.29%</span> 
+                               
+                        </div>
+                        
+                    </li>
+                
+                    <li id="hlist_6" >
+                        
+                        <div class="pic">
+                            
+                                <a href="http://bolinaiyue.soufun.com/" target="_blank"><img src="http://img3n.soufunimg.com/viewimage/agents/2013_12/26/M02/01/E1/wKgFk1K7lz-IKWjkAAI6kNfmmCEAAC8QQNPD8AAAjqo833/164x124.jpg" onerror="_missthumbnail(this, 100,75,true)" width="100" height="75" /></a>
+                            
+                        </div>
+                        <dl>
+                            <dt><a href="http://bolinaiyue.soufun.com/" target="_blank">柏林爱乐</a><img src="http://img.soufun.com/secondhouse/image/fangyuandaquan/zhuzhai1.gif"  />  <span class="shequName">[<a href="http://guanzhuang.soufun.com/" target="_blank">管庄</a>]</span>管庄路口北600米,东苇路9号&nbsp;<a target="_blank" href="http://bolinaiyue.soufun.com/video/esf/1010015233_2820.htm"><img src="http://img.soufun.com/secondhouse/image/esfnew/images/video/iconVideo.gif" /></a></dt>
+                            <dd>二手房源：<a class="number" href="/house-xm1010015233/" target="_blank"  >2616 套</a>   租房房源：<a class="number" href="http://zu.soufun.com/house-xm1010015233/" target="_blank" >329 套</a></dd>
+                            <dd><a href="http://bolinaiyue.soufun.com/xiangqing/" target="_blank" class="iconinfo" >查看详情</a>&nbsp;<a href="http://bolinaiyue.soufun.com/photo/1010015233.htm" target="_blank" class="iconpic">小区图片</a>&nbsp;<a href="http://esf.soufun.com/map/?newcode=1010015233 " target="_blank" class="iconmap" >地图位置</a>&nbsp;<a href="http://bolinaiyue.soufun.com/bbs/" target="_blank" class="iconbbs" >业主论坛</a>&nbsp; <a href="http://bolinaiyue.soufun.com/jiage/" target="_blank" class="iconprice">房价走势</a></dd>
+                            <dd >置业专家：<a href="http://esf.soufun.com/a/huangyuhua123" target="_blank" >黄玉花</a>&nbsp;<a href="http://esf.soufun.com/a/chenmeiling1106" target="_blank" >陈美玲</a>&nbsp;<a href="http://esf.soufun.com/a/sf18946662375" target="_blank" >李成林</a>&nbsp;</dd>
+                        </dl>
+                        
+                        <div class="price" ><a href="http://bolinaiyue.soufun.com/jiage/" target="_blank"><span class=" font16">31550</span>元/㎡</a><br />
+                               
+                                   <span class="green number" title="房价跌幅">↓3.6%</span> 
+                               
+                        </div>
+                        
+                    </li>
+                
+                    <li id="hlist_7" >
+                        <div class='Llogostyle01' title='星河湾' ><div class='Linfo02'><p class='Lname'>星河湾</p><p class='LMDlogo'><img src='http://img1n.soufunimg.com/agents/2012_11/26/14/bj/newcertificate/1353913152941.jpg' alt='搜房网店' /></p></div><a href='http://xinghewanbj.soufun.com/wangdian/' target='_blank'><div class="Llayertop"></div></a></div>
+                        <div class="pic">
+                            
+                                <a href="http://xinghewanbj.soufun.com/" target="_blank"><img src="http://img3n.soufunimg.com/viewimage/agents/2013_12/26/M06/01/E4/wKgFclK8FYKIOfLLAAGv0aNICkQAAC9NgLVrxgAAa_p862/164x124.jpg" onerror="_missthumbnail(this, 100,75,true)" width="100" height="75" /></a>
+                            
+                        </div>
+                        <dl>
+                            <dt><a href="http://xinghewanbj.soufun.com/" target="_blank">星河湾</a><img src="http://img.soufun.com/secondhouse/image/fangyuandaquan/zhuzhai1.gif"  />  <span class="shequName">[<a href="http://chaoqing.soufun.com/" target="_blank">朝青</a>]</span>朝阳北路四季星河路&nbsp;<a target="_blank" href="http://xinghewanbj.soufun.com/video/esf/1010053193_124445.htm"><img src="http://img.soufun.com/secondhouse/image/esfnew/images/video/iconVideo.gif" /></a></dt>
+                            <dd>二手房源：<a class="number" href="/house-xm1010053193/" target="_blank"  >2546 套</a>   租房房源：<a class="number" href="http://zu.soufun.com/house-xm1010053193/" target="_blank" >1663 套</a></dd>
+                            <dd><a href="http://xinghewanbj.soufun.com/xiangqing/" target="_blank" class="iconinfo" >查看详情</a>&nbsp;<a href="http://xinghewanbj.soufun.com/photo/1010053193.htm" target="_blank" class="iconpic">小区图片</a>&nbsp;<a href="http://esf.soufun.com/map/?newcode=1010053193 " target="_blank" class="iconmap" >地图位置</a>&nbsp;<a href="http://xinghewanbj.soufun.com/bbs/" target="_blank" class="iconbbs" >业主论坛</a>&nbsp; <a href="http://xinghewanbj.soufun.com/jiage/" target="_blank" class="iconprice">房价走势</a></dd>
+                            <dd >置业专家：<a href="http://esf.soufun.com/a/211514l" target="_blank" >李军辉</a>&nbsp;<a href="http://esf.soufun.com/a/huijun19860" target="_blank" >回俊</a>&nbsp;<a href="http://esf.soufun.com/a/%d5%d4%bd%f0%d1%e0" target="_blank" >赵金燕</a>&nbsp;<a href="http://esf.soufun.com/a/wjp0771" target="_blank" >王建鹏</a>&nbsp;</dd>
+                        </dl>
+                        
+                        <div class="price" style="margin-top:0;"><a href="http://xinghewanbj.soufun.com/jiage/" target="_blank"><span class=" font16">56933</span>元/㎡</a><br />
+                               
+                                   <span class="orange number" title="房价涨幅">↑0.86%</span>
+                               
+                        </div>
+                        
+                    </li>
+                
+                    <li id="hlist_8" >
+                        <div class='Llogostyle01' title='苹果社区' ><div class='Linfo02'><p class='Lname'>苹果社区</p><p class='LMDlogo'><img src='http://img3n.soufunimg.com/agents/2014_01/10/M08/02/1C/wKgFk1LPZoWIJin4AAASphntGKcAADTLQCHmRgAABK-451.jpg' alt='搜房网店' /></p></div><a href='http://pingguoshequ010.soufun.com/wangdian/' target='_blank'><div class="Llayertop"></div></a></div>
+                        <div class="pic">
+                            
+                                <a href="http://pingguoshequ010.soufun.com/esf/" target="_blank"><img src="http://img.soufun.com/viewimage/house/2010_04/29/bj/1272535339309_000/164x124.jpg" onerror="_missthumbnail(this, 100,75,true)" width="100" height="75" /></a>
+                            
+                        </div>
+                        <dl>
+                            <dt><a href="http://pingguoshequ010.soufun.com/esf/" target="_blank">苹果社区</a><img src="http://img.soufun.com/secondhouse/image/fangyuandaquan/zhuzhai1.gif"  />  <span class="shequName">[<a href="http://shuangjingbj.soufun.com/" target="_blank">双井</a>]</span>百子湾路32号&nbsp;<a target="_blank" href="http://pingguoshequ010.soufun.com/video/esf/1010033654_1918.htm"><img src="http://img.soufun.com/secondhouse/image/esfnew/images/video/iconVideo.gif" /></a></dt>
+                            <dd>二手房源：<a class="number" href="/house-xm1010033654/" target="_blank"  >2527 套</a>   租房房源：<a class="number" href="http://zu.soufun.com/house-xm1010033654/" target="_blank" >1282 套</a></dd>
+                            <dd><a href="http://pingguoshequ010.soufun.com/xiangqing/" target="_blank" class="iconinfo" >查看详情</a>&nbsp;<a href="http://pingguoshequ010.soufun.com/esf/photo/1010033654.htm" target="_blank" class="iconpic">小区图片</a>&nbsp;<a href="http://esf.soufun.com/map/?newcode=1010033654 " target="_blank" class="iconmap" >地图位置</a>&nbsp;<a href="http://pingguoshequ010.soufun.com/bbs/" target="_blank" class="iconbbs" >业主论坛</a>&nbsp; <a href="http://pingguoshequ010.soufun.com/jiage/" target="_blank" class="iconprice">房价走势</a></dd>
+                            <dd >置业专家：<a href="http://esf.soufun.com/a/5i5jyaozhongbao" target="_blank" >姚中宝</a>&nbsp;<a href="http://esf.soufun.com/a/lj13552801754" target="_blank" >戴文珠</a>&nbsp;<a href="http://esf.soufun.com/a/ljzhangna" target="_blank" >申亚博</a>&nbsp;</dd>
+                        </dl>
+                        
+                        <div class="price" style="margin-top:0;"><a href="http://pingguoshequ010.soufun.com/jiage/" target="_blank"><span class=" font16">48337</span>元/㎡</a><br />
+                               
+                                   <span class="green number" title="房价跌幅">↓1.84%</span> 
+                               
+                        </div>
+                        
+                    </li>
+                
+                    <li id="hlist_9" >
+                        <div class='Llogostyle01' title='后现代城' ><div class='Linfo02'><p class='Lname'>后现代城</p><p class='LMDlogo'><img src='http://img3n.soufunimg.com/agents/2014_05/30/M01/05/33/wKgFclOIXTaIIJ0TAAAqhFH8QbUAAIICQMGmlIAACqc575.jpg' alt='搜房网店' /></p></div><a href='http://houxiandaicheng.soufun.com/wangdian/' target='_blank'><div class="Llayertop"></div></a></div>
+                        <div class="pic">
+                            
+                                <a href="http://houxiandaicheng.soufun.com/" target="_blank"><img src="http://img1n.soufunimg.com/viewimage/agents1/2012_05/26/12/23/38/bj/houseinfo/400496890100/164x124.jpg" onerror="_missthumbnail(this, 100,75,true)" width="100" height="75" /></a>
+                            
+                        </div>
+                        <dl>
+                            <dt><a href="http://houxiandaicheng.soufun.com/" target="_blank">后现代城</a><img src="http://img.soufun.com/secondhouse/image/fangyuandaquan/zhuzhai1.gif"  />  <span class="shequName">[<a href="http://baiziwan.soufun.com/" target="_blank">百子湾</a>]</span>百子湾路16号&nbsp;<a target="_blank" href="http://houxiandaicheng.soufun.com/video/esf/1010029413_2222.htm"><img src="http://img.soufun.com/secondhouse/image/esfnew/images/video/iconVideo.gif" /></a></dt>
+                            <dd>二手房源：<a class="number" href="/house-xm1010029413/" target="_blank"  >2522 套</a>   租房房源：<a class="number" href="http://zu.soufun.com/house-xm1010029413/" target="_blank" >1774 套</a></dd>
+                            <dd><a href="http://houxiandaicheng.soufun.com/xiangqing/" target="_blank" class="iconinfo" >查看详情</a>&nbsp;<a href="http://houxiandaicheng.soufun.com/photo/1010029413.htm" target="_blank" class="iconpic">小区图片</a>&nbsp;<a href="http://esf.soufun.com/map/?newcode=1010029413 " target="_blank" class="iconmap" >地图位置</a>&nbsp;<a href="http://houxiandaicheng.soufun.com/bbs/" target="_blank" class="iconbbs" >业主论坛</a>&nbsp; <a href="http://houxiandaicheng.soufun.com/jiage/" target="_blank" class="iconprice">房价走势</a></dd>
+                            <dd >置业专家：<a href="http://esf.soufun.com/a/liuying0317" target="_blank" >刘莹</a>&nbsp;<a href="http://esf.soufun.com/a/zml13522174082" target="_blank" >张美露</a>&nbsp;</dd>
+                        </dl>
+                        
+                        <div class="price" style="margin-top:0;"><a href="http://houxiandaicheng.soufun.com/jiage/" target="_blank"><span class=" font16">38811</span>元/㎡</a><br />
+                               
+                                   <span class="green number" title="房价跌幅">↓2.54%</span> 
+                               
+                        </div>
+                        
+                    </li>
+                
+                    <li id="hlist_10" >
+                        <div class='Llogostyle01' title='北京新天地' ><div class='Linfo02'><p class='Lname'>北京新天地</p><p class='LMDlogo'><img src='http://img3n.soufunimg.com/agents/2013_10/31/M00/01/11/wKgFclJyObuIRJc1AAAb5iGMatoAABqzQMyY78AABv-727.jpg' alt='搜房网店' /></p></div><a href='http://xintiandibj.soufun.com/wangdian/' target='_blank'><div class="Llayertop"></div></a></div>
+                        <div class="pic">
+                            
+                                <a href="http://xintiandibj.soufun.com/esf/" target="_blank"><img src="http://img.soufun.com/viewimage/house/2010_05/10/bj/1273479336012_000/164x124.jpg" onerror="_missthumbnail(this, 100,75,true)" width="100" height="75" /></a>
+                            
+                        </div>
+                        <dl>
+                            <dt><a href="http://xintiandibj.soufun.com/esf/" target="_blank">北京新天地</a><img src="http://img.soufun.com/secondhouse/image/fangyuandaquan/zhuzhai1.gif"  />  <span class="shequName">[<a href="http://guanzhuang.soufun.com/" target="_blank">管庄</a>]</span>管庄地区杨闸环岛东北角&nbsp;<a target="_blank" href="http://xintiandibj.soufun.com/video/esf/1010143663_2822.htm"><img src="http://img.soufun.com/secondhouse/image/esfnew/images/video/iconVideo.gif" /></a></dt>
+                            <dd>二手房源：<a class="number" href="/house-xm1010143663/" target="_blank"  >2336 套</a>   租房房源：<a class="number" href="http://zu.soufun.com/house-xm1010143663/" target="_blank" >355 套</a></dd>
+                            <dd><a href="http://xintiandibj.soufun.com/xiangqing/" target="_blank" class="iconinfo" >查看详情</a>&nbsp;<a href="http://xintiandibj.soufun.com/esf/photo/1010143663.htm" target="_blank" class="iconpic">小区图片</a>&nbsp;<a href="http://esf.soufun.com/map/?newcode=1010143663 " target="_blank" class="iconmap" >地图位置</a>&nbsp;<a href="http://xintiandibj.soufun.com/bbs/" target="_blank" class="iconbbs" >业主论坛</a>&nbsp; <a href="http://xintiandibj.soufun.com/jiage/" target="_blank" class="iconprice">房价走势</a></dd>
+                            <dd >置业专家：<a href="http://esf.soufun.com/a/dong13321113668" target="_blank" >董红梅</a>&nbsp;<a href="http://esf.soufun.com/a/nantianba888" target="_blank" >马永君</a>&nbsp;<a href="http://esf.soufun.com/a/wangjianying619" target="_blank" >王建英</a>&nbsp;</dd>
+                        </dl>
+                        
+                        <div class="price" style="margin-top:0;"><a href="http://xintiandibj.soufun.com/jiage/" target="_blank"><span class=" font16">29147</span>元/㎡</a><br />
+                               
+                                   <span class="green number" title="房价跌幅">↓2.82%</span> 
+                               
+                        </div>
+                        
+                    </li>
+                
+                    <li id="hlist_11" >
+                        <div class='Llogostyle01' title='珠江帝景' ><div class='Linfo02'><p class='Lname'>珠江帝景</p><p class='LMDlogo'><img src='http://img3n.soufunimg.com/agents/2014_01/10/M08/02/1C/wKgFk1LPZoWIJin4AAASphntGKcAADTLQCHmRgAABK-451.jpg' alt='搜房网店' /></p></div><a href='http://zhujiangdijing.soufun.com/wangdian/' target='_blank'><div class="Llayertop"></div></a></div>
+                        <div class="pic">
+                            
+                                <a href="http://zhujiangdijing.soufun.com/" target="_blank"><img src="http://img.soufun.com/viewimage/house/2010_08/20/bj/1282284292184_000/164x124.jpg" onerror="_missthumbnail(this, 100,75,true)" width="100" height="75" /></a>
+                            
+                        </div>
+                        <dl>
+                            <dt><a href="http://zhujiangdijing.soufun.com/" target="_blank">珠江帝景</a><img src="http://img.soufun.com/secondhouse/image/fangyuandaquan/zhuzhai1.gif"  />  <span class="shequName">[<a href="http://dawanglu.soufun.com/" target="_blank">大望路</a>]</span>西大望路甲23号&nbsp;<a target="_blank" href="http://zhujiangdijing.soufun.com/video/esf/1010024693_8127.htm"><img src="http://img.soufun.com/secondhouse/image/esfnew/images/video/iconVideo.gif" /></a></dt>
+                            <dd>二手房源：<a class="number" href="/house-xm1010024693/" target="_blank"  >2315 套</a>   租房房源：<a class="number" href="http://zu.soufun.com/house-xm1010024693/" target="_blank" >790 套</a></dd>
+                            <dd><a href="http://zhujiangdijing.soufun.com/xiangqing/" target="_blank" class="iconinfo" >查看详情</a>&nbsp;<a href="http://zhujiangdijing.soufun.com/photo/1010024693.htm" target="_blank" class="iconpic">小区图片</a>&nbsp;<a href="http://esf.soufun.com/map/?newcode=1010024693 " target="_blank" class="iconmap" >地图位置</a>&nbsp;<a href="http://zhujiangdijing.soufun.com/bbs/" target="_blank" class="iconbbs" >业主论坛</a>&nbsp; <a href="http://zhujiangdijing.soufun.com/jiage/" target="_blank" class="iconprice">房价走势</a></dd>
+                            <dd >置业专家：<a href="http://esf.soufun.com/a/5i5jwyk" target="_blank" >卫玉柯</a>&nbsp;<a href="http://esf.soufun.com/a/lwoaiwojia" target="_blank" >王明</a>&nbsp;<a href="http://esf.soufun.com/a/szl13910601847" target="_blank" >宋泽龙</a>&nbsp;<a href="http://esf.soufun.com/a/zyling11" target="_blank" >张义灵</a>&nbsp;</dd>
+                        </dl>
+                        
+                        <div class="price" style="margin-top:0;"><a href="http://zhujiangdijing.soufun.com/jiage/" target="_blank"><span class=" font16">49575</span>元/㎡</a><br />
+                               
+                                   <span class="green number" title="房价跌幅">↓1.81%</span> 
+                               
+                        </div>
+                        
+                    </li>
+                
+                    <li id="hlist_12" >
+                        <div class='Llogostyle01' title='阳光上东' ><div class='Linfo02'><p class='Lname'>阳光上东</p><p class='LMDlogo'><img src='http://img1n.soufunimg.com/agents/2011_10/26/17/bj/newcertificate/1319622426395.jpg' alt='搜房网店' /></p></div><a href='http://yangguangshangdong010.soufun.com/wangdian/' target='_blank'><div class="Llayertop"></div></a></div>
+                        <div class="pic">
+                            
+                                <a href="http://yangguangshangdong010.soufun.com/" target="_blank"><img src="http://img.soufun.com/viewimage/house/2010_05/10/bj/1273477127490_000/164x124.jpg" onerror="_missthumbnail(this, 100,75,true)" width="100" height="75" /></a>
+                            
+                        </div>
+                        <dl>
+                            <dt><a href="http://yangguangshangdong010.soufun.com/" target="_blank">阳光上东</a><img src="http://img.soufun.com/secondhouse/image/fangyuandaquan/zhuzhai1.gif"  />  <span class="shequName">[<a href="http://jiuxianqiao.soufun.com/" target="_blank">酒仙桥</a>]</span>东四环北路6号(四环东侧宵云桥东南角..&nbsp;<a target="_blank" href="http://yangguangshangdong010.soufun.com/video/esf/1010047814_2639.htm"><img src="http://img.soufun.com/secondhouse/image/esfnew/images/video/iconVideo.gif" /></a></dt>
+                            <dd>二手房源：<a class="number" href="/house-xm1010047814/" target="_blank"  >2251 套</a>   租房房源：<a class="number" href="http://zu.soufun.com/house-xm1010047814/" target="_blank" >1557 套</a></dd>
+                            <dd><a href="http://yangguangshangdong010.soufun.com/xiangqing/" target="_blank" class="iconinfo" >查看详情</a>&nbsp;<a href="http://yangguangshangdong010.soufun.com/photo/1010047814.htm" target="_blank" class="iconpic">小区图片</a>&nbsp;<a href="http://esf.soufun.com/map/?newcode=1010047814 " target="_blank" class="iconmap" >地图位置</a>&nbsp;<a href="http://yangguangshangdong010.soufun.com/bbs/" target="_blank" class="iconbbs" >业主论坛</a>&nbsp; <a href="http://yangguangshangdong010.soufun.com/jiage/" target="_blank" class="iconprice">房价走势</a></dd>
+                            <dd >置业专家：<a href="http://esf.soufun.com/a/sunyl66" target="_blank" >许克磊</a>&nbsp;<a href="http://esf.soufun.com/a/zmy13811326274" target="_blank" >张明永</a>&nbsp;<a href="http://esf.soufun.com/a/sunyong523320" target="_blank" >孙勇</a>&nbsp;<a href="http://esf.soufun.com/a/ak47f" target="_blank" >应嘉初</a>&nbsp;</dd>
+                        </dl>
+                        
+                        <div class="price" style="margin-top:0;"><a href="http://yangguangshangdong010.soufun.com/jiage/" target="_blank"><span class=" font16">51292</span>元/㎡</a><br />
+                               
+                                   <span class="green number" title="房价跌幅">↓3.67%</span> 
+                               
+                        </div>
+                        
+                    </li>
+                
+                    <li id="hlist_13" >
+                        <div class='Llogostyle01' title='国奥村' ><div class='Linfo02'><p class='Lname'>国奥村</p><p class='LMDlogo'><img src='http://img1n.soufunimg.com/agents/2011_12/26/12/bj/newcertificate/1324873455191.jpg' alt='搜房网店' /></p></div><a href='http://guoaocun010.soufun.com/wangdian/' target='_blank'><div class="Llayertop"></div></a></div>
+                        <div class="pic">
+                            
+                                <a href="http://guoaocun010.soufun.com/" target="_blank"><img src="http://img1n.soufunimg.com/viewimage/agents/2011_10/13/09/56/1/bj/houseinfo/406983592800/164x124.jpg" onerror="_missthumbnail(this, 100,75,true)" width="100" height="75" /></a>
+                            
+                        </div>
+                        <dl>
+                            <dt><a href="http://guoaocun010.soufun.com/" target="_blank">国奥村</a><img src="http://img.soufun.com/secondhouse/image/fangyuandaquan/zhuzhai1.gif"  />  <span class="shequName">[<a href="http://aolinpikegongyuan.soufun.com/" target="_blank">奥林匹克公园</a>]</span>林萃东路1号院&nbsp;<a target="_blank" href="http://guoaocun010.soufun.com/video/esf/1010137343_4015.htm"><img src="http://img.soufun.com/secondhouse/image/esfnew/images/video/iconVideo.gif" /></a></dt>
+                            <dd>二手房源：<a class="number" href="/house-xm1010137343/" target="_blank"  >2201 套</a>   租房房源：<a class="number" href="http://zu.soufun.com/house-xm1010137343/" target="_blank" >764 套</a></dd>
+                            <dd><a href="http://guoaocun010.soufun.com/xiangqing/" target="_blank" class="iconinfo" >查看详情</a>&nbsp;<a href="http://guoaocun010.soufun.com/photo/1010137343.htm" target="_blank" class="iconpic">小区图片</a>&nbsp;<a href="http://esf.soufun.com/map/?newcode=1010137343 " target="_blank" class="iconmap" >地图位置</a>&nbsp;<a href="http://guoaocun010.soufun.com/bbs/" target="_blank" class="iconbbs" >业主论坛</a>&nbsp; <a href="http://guoaocun010.soufun.com/jiage/" target="_blank" class="iconprice">房价走势</a></dd>
+                            <dd >置业专家：<a href="http://esf.soufun.com/a/dongxiaowei123" target="_blank" >董晓伟</a>&nbsp;<a href="http://esf.soufun.com/a/fky1217" target="_blank" >冯凯影</a>&nbsp;<a href="http://esf.soufun.com/a/guoyang0428" target="_blank" >郭杨杨</a>&nbsp;<a href="http://esf.soufun.com/a/21bdclh" target="_blank" >李海柱</a>&nbsp;</dd>
+                        </dl>
+                        
+                        <div class="price" style="margin-top:0;"><a href="http://guoaocun010.soufun.com/jiage/" target="_blank"><span class=" font16">66613</span>元/㎡</a><br />
+                               
+                                   <span class="green number" title="房价跌幅">↓3.07%</span> 
+                               
+                        </div>
+                        
+                    </li>
+                
+                    <li id="hlist_14" >
+                        <div class='Llogostyle01' title='北京华贸城' ><div class='Linfo02'><p class='Lname'>北京华贸城</p><p class='LMDlogo'><img src='http://img3n.soufunimg.com/agents/2013_11/06/M07/01/25/wKgFclJ5_ICIT6T4AAAbeZvghC8AABytQMNKfQAABuR103.jpg' alt='搜房网店' /></p></div><a href='http://beijinghuamaocheng.soufun.com/wangdian/' target='_blank'><div class="Llayertop"></div></a></div>
+                        <div class="pic">
+                            
+                                <a href="http://beijinghuamaocheng.soufun.com/esf/" target="_blank"><img src="http://img.soufun.com/viewimage/house/2009_06/08/bj/1244430895182_000/164x124.jpg" onerror="_missthumbnail(this, 100,75,true)" width="100" height="75" /></a>
+                            
+                        </div>
+                        <dl>
+                            <dt><a href="http://beijinghuamaocheng.soufun.com/esf/" target="_blank">北京华贸城</a><img src="http://img.soufun.com/secondhouse/image/fangyuandaquan/zhuzhai1.gif"  />  <span class="shequName">[<a href="http://by.soufun.com/" target="_blank">北苑</a>]</span>北苑站北300米&nbsp;<a target="_blank" href="http://beijinghuamaocheng.soufun.com/video/esf/1010348867_124771.htm"><img src="http://img.soufun.com/secondhouse/image/esfnew/images/video/iconVideo.gif" /></a></dt>
+                            <dd>二手房源：<a class="number" href="/house-xm1010348867/" target="_blank"  >2199 套</a>   租房房源：<a class="number" href="http://zu.soufun.com/house-xm1010348867/" target="_blank" >918 套</a></dd>
+                            <dd><a href="http://beijinghuamaocheng.soufun.com/xiangqing/" target="_blank" class="iconinfo" >查看详情</a>&nbsp;<a href="http://beijinghuamaocheng.soufun.com/esf/photo/1010348867.htm" target="_blank" class="iconpic">小区图片</a>&nbsp;<a href="http://esf.soufun.com/map/?newcode=1010348867 " target="_blank" class="iconmap" >地图位置</a>&nbsp;<a href="http://beijinghuamaocheng.soufun.com/bbs/" target="_blank" class="iconbbs" >业主论坛</a>&nbsp; <a href="http://beijinghuamaocheng.soufun.com/jiage/" target="_blank" class="iconprice">房价走势</a></dd>
+                            <dd >置业专家：<a href="http://esf.soufun.com/a/0000muzi" target="_blank" >张东红</a>&nbsp;<a href="http://esf.soufun.com/a/zyn58" target="_blank" >张雅楠</a>&nbsp;<a href="http://esf.soufun.com/a/s13811401456" target="_blank" >孙文赛</a>&nbsp;</dd>
+                        </dl>
+                        
+                        <div class="price" style="margin-top:0;"><a href="http://beijinghuamaocheng.soufun.com/jiage/" target="_blank"><span class=" font16">44792</span>元/㎡</a><br />
+                               
+                                   <span class="green number" title="房价跌幅">↓0.48%</span> 
+                               
+                        </div>
+                        
+                    </li>
+                
+                    <li id="hlist_15" >
+                        <div class='Llogostyle01' title='东湖湾' ><div class='Linfo02'><p class='Lname'>东湖湾</p><p class='LMDlogo'><img src='http://img1n.soufunimg.com/agents/2012_09/18/17/bj/newcertificate/1347960528209.jpg' alt='搜房网店' /></p></div><a href='http://donghuwan010.soufun.com/wangdian/' target='_blank'><div class="Llayertop"></div></a></div>
+                        <div class="pic">
+                            
+                                <a href="http://donghuwan010.soufun.com/" target="_blank"><img src="http://img.soufun.com/viewimage/house/2010_09/15/bj/1284525319285_000/164x124.jpg" onerror="_missthumbnail(this, 100,75,true)" width="100" height="75" /></a>
+                            
+                        </div>
+                        <dl>
+                            <dt><a href="http://donghuwan010.soufun.com/" target="_blank">东湖湾</a><img src="http://img.soufun.com/secondhouse/image/fangyuandaquan/zhuzhai1.gif"  />  <span class="shequName">[<a href="http://wangjing.soufun.com/" target="_blank">望京</a>]</span>望京北小河森林公园东侧&nbsp;<a target="_blank" href="http://donghuwan010.soufun.com/video/esf/1010066562_124530.htm"><img src="http://img.soufun.com/secondhouse/image/esfnew/images/video/iconVideo.gif" /></a></dt>
+                            <dd>二手房源：<a class="number" href="/house-xm1010066562/" target="_blank"  >2143 套</a>   租房房源：<a class="number" href="http://zu.soufun.com/house-xm1010066562/" target="_blank" >1153 套</a></dd>
+                            <dd><a href="http://donghuwan010.soufun.com/xiangqing/" target="_blank" class="iconinfo" >查看详情</a>&nbsp;<a href="http://donghuwan010.soufun.com/photo/1010066562.htm" target="_blank" class="iconpic">小区图片</a>&nbsp;<a href="http://esf.soufun.com/map/?newcode=1010066562 " target="_blank" class="iconmap" >地图位置</a>&nbsp;<a href="http://donghuwan010.soufun.com/bbs/" target="_blank" class="iconbbs" >业主论坛</a>&nbsp; <a href="http://donghuwan010.soufun.com/jiage/" target="_blank" class="iconprice">房价走势</a></dd>
+                            <dd >置业专家：<a href="http://esf.soufun.com/a/mayasong112" target="_blank" >马亚松</a>&nbsp;<a href="http://esf.soufun.com/a/wawjyt" target="_blank" >刘向雨</a>&nbsp;<a href="http://esf.soufun.com/a/lj15011006228" target="_blank" >许志芳</a>&nbsp;<a href="http://esf.soufun.com/a/mazhanguo12" target="_blank" >马占国</a>&nbsp;</dd>
+                        </dl>
+                        
+                        <div class="price" style="margin-top:0;"><a href="http://donghuwan010.soufun.com/jiage/" target="_blank"><span class=" font16">51446</span>元/㎡</a><br />
+                               
+                                   <span class="green number" title="房价跌幅">↓1.97%</span> 
+                               
+                        </div>
+                        
+                    </li>
+                
+                    <li id="hlist_16" >
+                        <div class='Llogostyle01' title='澳洲康都' ><div class='Linfo02'><p class='Lname'>澳洲康都</p><p class='LMDlogo'><img src='http://img3n.soufunimg.com/agents/2014_01/10/M08/02/1C/wKgFk1LPZoWIJin4AAASphntGKcAADTLQCHmRgAABK-451.jpg' alt='搜房网店' /></p></div><a href='http://aozhoukangdu.soufun.com/wangdian/' target='_blank'><div class="Llayertop"></div></a></div>
+                        <div class="pic">
+                            
+                                <a href="http://aozhoukangdu.soufun.com/" target="_blank"><img src="http://img1n.soufunimg.com/viewimage/agents1/2012_04/06/15/41/62/bj/houseinfo/409713224900/164x124.jpg" onerror="_missthumbnail(this, 100,75,true)" width="100" height="75" /></a>
+                            
+                        </div>
+                        <dl>
+                            <dt><a href="http://aozhoukangdu.soufun.com/" target="_blank">澳洲康都</a><img src="http://img.soufun.com/secondhouse/image/fangyuandaquan/zhuzhai1.gif"  />  <span class="shequName">[<a href="http://wangjing.soufun.com/" target="_blank">望京</a>]</span>广顺北大街叶青大厦西300米以北</dt>
+                            <dd>二手房源：<a class="number" href="/house-xm1010055033/" target="_blank"  >1986 套</a>   租房房源：<a class="number" href="http://zu.soufun.com/house-xm1010055033/" target="_blank" >705 套</a></dd>
+                            <dd><a href="http://aozhoukangdu.soufun.com/xiangqing/" target="_blank" class="iconinfo" >查看详情</a>&nbsp;<a href="http://aozhoukangdu.soufun.com/photo/1010055033.htm" target="_blank" class="iconpic">小区图片</a>&nbsp;<a href="http://esf.soufun.com/map/?newcode=1010055033 " target="_blank" class="iconmap" >地图位置</a>&nbsp;<a href="http://aozhoukangdu.soufun.com/bbs/" target="_blank" class="iconbbs" >业主论坛</a>&nbsp; <a href="http://aozhoukangdu.soufun.com/jiage/" target="_blank" class="iconprice">房价走势</a></dd>
+                            <dd >置业专家：<a href="http://esf.soufun.com/a/xuxiaoli97" target="_blank" >徐晓莉</a>&nbsp;<a href="http://esf.soufun.com/a/xxdx036" target="_blank" >李井辉</a>&nbsp;<a href="http://esf.soufun.com/a/gaowuhu" target="_blank" >高伍虎</a>&nbsp;<a href="http://esf.soufun.com/a/lzh1230" target="_blank" >刘志豪</a>&nbsp;</dd>
+                        </dl>
+                        
+                        <div class="price" style="margin-top:0;"><a href="http://aozhoukangdu.soufun.com/jiage/" target="_blank"><span class=" font16">42806</span>元/㎡</a><br />
+                               
+                                   <span class="green number" title="房价跌幅">↓2.08%</span> 
+                               
+                        </div>
+                        
+                    </li>
+                
+                    <li id="hlist_17" >
+                        <div class='Llogostyle01' title='棕榈泉国际公' ><div class='Linfo02'><p class='Lname'>棕榈泉国际公</p><p class='LMDlogo'><img src='http://img3n.soufunimg.com/agents/2014_03/18/M00/03/7C/wKgFclMoG3GIBT4BAAAULPADR4IAAFczAP_49gAABRE163.jpg' alt='搜房网店' /></p></div><a href='http://zonglvquan.soufun.com/wangdian/' target='_blank'><div class="Llayertop"></div></a></div>
+                        <div class="pic">
+                            
+                                <a href="http://zonglvquan.soufun.com/" target="_blank"><img src="http://img1n.soufunimg.com/viewimage/agents2/2012_07/11/21/10/52/bj/houseinfo/401483878900/164x124.jpg" onerror="_missthumbnail(this, 100,75,true)" width="100" height="75" /></a>
+                            
+                        </div>
+                        <dl>
+                            <dt><a href="http://zonglvquan.soufun.com/" target="_blank">棕榈泉国际公寓</a><img src="http://img.soufun.com/secondhouse/image/fangyuandaquan/zhuzhai1.gif"  />  <span class="shequName">[<a href="http://chaoyanggongyuan.soufun.com/" target="_blank">朝阳公园</a>]</span>朝阳公园南路8号</dt>
+                            <dd>二手房源：<a class="number" href="/house-xm1010024854/" target="_blank"  >1902 套</a>   租房房源：<a class="number" href="http://zu.soufun.com/house-xm1010024854/" target="_blank" >1822 套</a></dd>
+                            <dd><a href="http://zonglvquan.soufun.com/xiangqing/" target="_blank" class="iconinfo" >查看详情</a>&nbsp;<a href="http://zonglvquan.soufun.com/photo/1010024854.htm" target="_blank" class="iconpic">小区图片</a>&nbsp;<a href="http://esf.soufun.com/map/?newcode=1010024854 " target="_blank" class="iconmap" >地图位置</a>&nbsp;<a href="http://zonglvquan.soufun.com/bbs/" target="_blank" class="iconbbs" >业主论坛</a>&nbsp; <a href="http://zonglvquan.soufun.com/jiage/" target="_blank" class="iconprice">房价走势</a></dd>
+                            <dd >置业专家：<a href="http://esf.soufun.com/a/lj15510795169" target="_blank" >张瑞</a>&nbsp;<a href="http://esf.soufun.com/a/lihuan7216" target="_blank" >段永振</a>&nbsp;</dd>
+                        </dl>
+                        
+                        <div class="price" style="margin-top:0;"><a href="http://zonglvquan.soufun.com/jiage/" target="_blank"><span class=" font16">62503</span>元/㎡</a><br />
+                               
+                                   <span class="green number" title="房价跌幅">↓1.7%</span> 
+                               
+                        </div>
+                        
+                    </li>
+                
+                    <li id="hlist_18" >
+                        <div class='Llogostyle01' title='望京新城' ><div class='Linfo02'><p class='Lname'>望京新城</p><p class='LMDlogo'><img src='http://img1n.soufunimg.com/agents/2012_12/17/10/bj/newcertificate/1355711910336.jpg' alt='搜房网店' /></p></div><a href='http://wangjingxincheng.soufun.com/wangdian/' target='_blank'><div class="Llayertop"></div></a></div>
+                        <div class="pic">
+                            
+                                <a href="http://wangjingxincheng.soufun.com/" target="_blank"><img src="http://img1n.soufun.com/viewimage/agents/2009_05/19/bj/houseinfo/1242730551717_000/164x124.jpg" onerror="_missthumbnail(this, 100,75,true)" width="100" height="75" /></a>
+                            
+                        </div>
+                        <dl>
+                            <dt><a href="http://wangjingxincheng.soufun.com/" target="_blank">望京新城</a><img src="http://img.soufun.com/secondhouse/image/fangyuandaquan/zhuzhai1.gif"  />  <span class="shequName">[<a href="http://wangjing.soufun.com/" target="_blank">望京</a>]</span>广顺北大街与阜通西大街交汇处北侧望..</dt>
+                            <dd>二手房源：<a class="number" href="/house-xm1010001770/" target="_blank"  >1761 套</a>   租房房源：<a class="number" href="http://zu.soufun.com/house-xm1010001770/" target="_blank" >505 套</a></dd>
+                            <dd><a href="http://wangjingxincheng.soufun.com/xiangqing/" target="_blank" class="iconinfo" >查看详情</a>&nbsp;<a href="http://wangjingxincheng.soufun.com/photo/1010001770.htm" target="_blank" class="iconpic">小区图片</a>&nbsp;<a href="http://esf.soufun.com/map/?newcode=1010001770 " target="_blank" class="iconmap" >地图位置</a>&nbsp;<a href="http://wangjingxincheng.soufun.com/bbs/" target="_blank" class="iconbbs" >业主论坛</a>&nbsp; <a href="http://wangjingxincheng.soufun.com/jiage/" target="_blank" class="iconprice">房价走势</a></dd>
+                            <dd >置业专家：<a href="http://esf.soufun.com/a/zxd5288" target="_blank" >朱学东</a>&nbsp;<a href="http://esf.soufun.com/a/renyunsheng123" target="_blank" >闫秋雨</a>&nbsp;<a href="http://esf.soufun.com/a/zhang2256" target="_blank" >张德广</a>&nbsp;</dd>
+                        </dl>
+                        
+                        <div class="price" style="margin-top:0;"><a href="http://wangjingxincheng.soufun.com/jiage/" target="_blank"><span class=" font16">35343</span>元/㎡</a><br />
+                               
+                                   <span class="green number" title="房价跌幅">↓2.12%</span> 
+                               
+                        </div>
+                        
+                    </li>
+                
+                    <li id="hlist_19" >
+                        <div class='Llogostyle01' title='富力又一城' ><div class='Linfo02'><p class='Lname'>富力又一城</p><p class='LMDlogo'><img src='http://img3n.soufunimg.com/agents/2014_04/30/M06/04/4D/wKgFklNguPyIC-miAAAqhFH8QbUAAGuNwMswikAACqc113.jpg' alt='搜房网店' /></p></div><a href='http://youyichengfl.soufun.com/wangdian/' target='_blank'><div class="Llayertop"></div></a></div>
+                        <div class="pic">
+                            
+                                <a href="http://youyichengfl.soufun.com/" target="_blank"><img src="http://img.soufun.com/viewimage/house/2010_05/25/bj/1274775062658_000/164x124.jpg" onerror="_missthumbnail(this, 100,75,true)" width="100" height="75" /></a>
+                            
+                        </div>
+                        <dl>
+                            <dt><a href="http://youyichengfl.soufun.com/" target="_blank">富力又一城</a><img src="http://img.soufun.com/secondhouse/image/fangyuandaquan/zhuzhai1.gif"  />  <span class="shequName">[<a href="http://dougezhuang.soufun.com/" target="_blank">豆各庄</a>]</span>大鲁店北路北侧黄厂南里1号院&nbsp;<a target="_blank" href="http://youyichengfl.soufun.com/video/esf/1010094529_124712.htm"><img src="http://img.soufun.com/secondhouse/image/esfnew/images/video/iconVideo.gif" /></a></dt>
+                            <dd>二手房源：<a class="number" href="/house-xm1010094529/" target="_blank"  >1741 套</a>   租房房源：<a class="number" href="http://zu.soufun.com/house-xm1010094529/" target="_blank" >385 套</a></dd>
+                            <dd><a href="http://youyichengfl.soufun.com/xiangqing/" target="_blank" class="iconinfo" >查看详情</a>&nbsp;<a href="http://youyichengfl.soufun.com/photo/1010094529.htm" target="_blank" class="iconpic">小区图片</a>&nbsp;<a href="http://esf.soufun.com/map/?newcode=1010094529 " target="_blank" class="iconmap" >地图位置</a>&nbsp;<a href="http://youyichengfl.soufun.com/bbs/" target="_blank" class="iconbbs" >业主论坛</a>&nbsp; <a href="http://youyichengfl.soufun.com/jiage/" target="_blank" class="iconprice">房价走势</a></dd>
+                            <dd >置业专家：<a href="http://esf.soufun.com/a/ztbzz" target="_blank" >刘双玲</a>&nbsp;<a href="http://esf.soufun.com/a/xiadyang" target="_blank" >夏冬阳</a>&nbsp;<a href="http://esf.soufun.com/a/liuhaijin828" target="_blank" >刘海进</a>&nbsp;</dd>
+                        </dl>
+                        
+                        <div class="price" style="margin-top:0;"><a href="http://youyichengfl.soufun.com/jiage/" target="_blank"><span class=" font16">27683</span>元/㎡</a><br />
+                               
+                                   <span class="green number" title="房价跌幅">↓3.33%</span> 
+                               
+                        </div>
+                        
+                    </li>
+                
+                    <li id="hlist_20" >
+                        <div class='Llogostyle01' title='百环家园' ><div class='Linfo02'><p class='Lname'>百环家园</p><p class='LMDlogo'><img src='http://img1n.soufunimg.com/agents/2013_01/10/10/bj/newcertificate/1357785774852.jpg' alt='搜房网店' /></p></div><a href='http://baihuanjiayuan.soufun.com/wangdian/' target='_blank'><div class="Llayertop"></div></a></div>
+                        <div class="pic">
+                            
+                                <a href="http://baihuanjiayuan.soufun.com/" target="_blank"><img src="http://img1n.soufunimg.com/viewimage/agents/2009_08/25/bj/project/1251199044612_000/164x124.jpg" onerror="_missthumbnail(this, 100,75,true)" width="100" height="75" /></a>
+                            
+                        </div>
+                        <dl>
+                            <dt><a href="http://baihuanjiayuan.soufun.com/" target="_blank">百环家园</a><img src="http://img.soufun.com/secondhouse/image/fangyuandaquan/zhuzhai1.gif"  />  <span class="shequName">[<a href="http://shuangjingbj.soufun.com/" target="_blank">双井</a>]</span>东三环双井桥东南侧44号(原北大集团..</dt>
+                            <dd>二手房源：<a class="number" href="/house-xm1010048135/" target="_blank"  >1719 套</a>   租房房源：<a class="number" href="http://zu.soufun.com/house-xm1010048135/" target="_blank" >763 套</a></dd>
+                            <dd><a href="http://baihuanjiayuan.soufun.com/xiangqing/" target="_blank" class="iconinfo" >查看详情</a>&nbsp;<a href="http://baihuanjiayuan.soufun.com/photo/1010048135.htm" target="_blank" class="iconpic">小区图片</a>&nbsp;<a href="http://esf.soufun.com/map/?newcode=1010048135 " target="_blank" class="iconmap" >地图位置</a>&nbsp;<a href="http://baihuanjiayuan.soufun.com/bbs/" target="_blank" class="iconbbs" >业主论坛</a>&nbsp; <a href="http://baihuanjiayuan.soufun.com/jiage/" target="_blank" class="iconprice">房价走势</a></dd>
+                            <dd >置业专家：<a href="http://esf.soufun.com/a/bj16408" target="_blank" >张健</a>&nbsp;<a href="http://esf.soufun.com/a/zhangyangwo88" target="_blank" >张波</a>&nbsp;<a href="http://esf.soufun.com/a/wangyinghao1314" target="_blank" >王英豪</a>&nbsp;</dd>
+                        </dl>
+                        
+                        <div class="price" style="margin-top:0;"><a href="http://baihuanjiayuan.soufun.com/jiage/" target="_blank"><span class=" font16">34579</span>元/㎡</a><br />
+                               
+                                   <span class="green number" title="房价跌幅">↓2.04%</span> 
+                               
+                        </div>
+                        
+                    </li>
+                
+            </ul>
+            <div class="clear">
+            </div>
+            <ul class="mt15">
+                <li class="results floatl">共搜索到<strong class="number orange">1621</strong>条朝阳小区信息</li>
+                <li id="hlist_28" class="pages floatr">1/82 页   <a class="orange" style="text-decoration:none"><strong>1</strong></a> <a href="/housing/1__1_0_0_0_2_0_0/" >2</a> <a href="/housing/1__1_0_0_0_3_0_0/" >3</a> <a href="/housing/1__1_0_0_0_4_0_0/" >4</a> <a href="/housing/1__1_0_0_0_5_0_0/" >5</a> <a href="/housing/1__1_0_0_0_6_0_0/" >6</a> <a href="/housing/1__1_0_0_0_7_0_0/" >7</a> <a href="/housing/1__1_0_0_0_8_0_0/" >8</a> <a href="/housing/1__1_0_0_0_9_0_0/" >9</a> <a id="pagectrol_hlk_next" href="/housing/1__1_0_0_0_2_0_0/">下一页</a> <a id="pagectrol_hlk_last" href="/housing/1__1_0_0_0_82_0_0/">末页</a></li>
+            </ul>
+            <div class="clear">
+            </div>
+            
+            <!--hot keywords 20111130 begin-->
+            
+            <!--hot keywords 20111130 end-->
+        </div>
+        <div class="sidebar mt15">
+    <div id="hlist_26"><a target="_blank" href="http://client.3g.soufun.com/http/wap/index.html"><img src="http://img.soufun.com/secondhouse/image/esfnew/images/20080.jpg" /></a></div>
+    <!--增加广告位begin 2013-05-20-->
+    <div class="mt15">
+    
+    </div>
+    <!--增加广告位end -->
+    <div class="mt15"><a href="http://esf.soufun.com/housing/bang/hotlist.htm" target="_blank"><img src="http://img.soufun.com/secondhouse/image/fangyuandaquan/25090-top10.jpg" /></a></div>
+    
+    <div class="column mt15">
+        <div class="columntop"></div>    
+        <div class="columncenter" id="hlist_27">
+   	      <dl><dt>北京评估热门楼盘排行榜</dt></dl>
+                <ul>
+                  
+                        <li>
+                       <span class=" wid100"><a href='http://pinggu.soufun.com/detail/BJ/1010035895.htm' target="_blank">国美第一城</a></span>
+                       <span class="wid75 orange"><a href='http://pinggu.soufun.com/process/1010035895.htm' target='_blank'>36951元/㎡</a></span>
+                      </li>
+                     
+                        <li>
+                       <span class=" wid100"><a href='http://pinggu.soufun.com/detail/BJ/1010040773.htm' target="_blank">远洋山水</a></span>
+                       <span class="wid75 orange"><a href='http://pinggu.soufun.com/process/1010040773.htm' target='_blank'>41637元/㎡</a></span>
+                      </li>
+                     
+                        <li>
+                       <span class=" wid100"><a href='http://pinggu.soufun.com/detail/BJ/1010679585.htm' target="_blank">中弘北京像素</a></span>
+                       <span class="wid75 orange"><a href='http://pinggu.soufun.com/process/1010679585.htm' target='_blank'>35034元/㎡</a></span>
+                      </li>
+                     
+                        <li>
+                       <span class=" wid100"><a href='http://pinggu.soufun.com/detail/BJ/1010033654.htm' target="_blank">苹果社区</a></span>
+                       <span class="wid75 orange"><a href='http://pinggu.soufun.com/process/1010033654.htm' target='_blank'>48337元/㎡</a></span>
+                      </li>
+                     
+                        <li>
+                       <span class=" wid100"><a href='http://pinggu.soufun.com/detail/BJ/1319730233.htm' target="_blank">潮白河孔雀英国宫</a></span>
+                       <span class="wid75 orange"><a href='http://pinggu.soufun.com/process/1319730233.htm' target='_blank'>7831元/㎡</a></span>
+                      </li>
+                     
+                        <li>
+                       <span class=" wid100"><a href='http://pinggu.soufun.com/detail/BJ/1010094529.htm' target="_blank">富力又一城</a></span>
+                       <span class="wid75 orange"><a href='http://pinggu.soufun.com/process/1010094529.htm' target='_blank'>27683元/㎡</a></span>
+                      </li>
+                     
+                        <li>
+                       <span class=" wid100"><a href='http://pinggu.soufun.com/detail/BJ/1010029413.htm' target="_blank">后现代城</a></span>
+                       <span class="wid75 orange"><a href='http://pinggu.soufun.com/process/1010029413.htm' target='_blank'>38811元/㎡</a></span>
+                      </li>
+                     
+                        <li>
+                       <span class=" wid100"><a href='http://pinggu.soufun.com/detail/BJ/1322696369.htm' target="_blank">天洋城</a></span>
+                       <span class="wid75 orange"><a href='http://pinggu.soufun.com/process/1322696369.htm' target='_blank'>10686元/㎡</a></span>
+                      </li>
+                     
+                        <li>
+                       <span class=" wid100"><a href='http://pinggu.soufun.com/detail/BJ/1010015233.htm' target="_blank">柏林爱乐</a></span>
+                       <span class="wid75 orange"><a href='http://pinggu.soufun.com/process/1010015233.htm' target='_blank'>31550元/㎡</a></span>
+                      </li>
+                     
+                        <li>
+                       <span class=" wid100"><a href='http://pinggu.soufun.com/detail/BJ/1010039994.htm' target="_blank">三环新城</a></span>
+                       <span class="wid75 orange"><a href='http://pinggu.soufun.com/process/1010039994.htm' target='_blank'>30804元/㎡</a></span>
+                      </li>
+                                   
+                   <li class="more"><a href="http://pinggu.soufun.com/pghouse-c0BJ/" target="_blank">更多>></a></li>
+           </ul>
+        </div>
+    </div>
+    <div class="columnbottom"></div>
+    <!-- ad--> 
+
+
+     <div class="column mt15">
+        <div class="columntop"></div>    
+        <div class="columncenter" id="zixun">
+            <dl><dt>二手房资讯</dt></dl>
+            <ul>
+            
+                <li>·<a href="http://esf.soufun.com/newsecond/news/13164841.htm" target="_blank">
+                    三环精装免税二居降40万 </a></li>
+            
+                <li>·<a href="http://esf.soufun.com/newsecond/news/13164187.htm" target="_blank">
+                    海淀免税3居195万送小院</a></li>
+            
+                <li>·<a href="http://esf.soufun.com/newsecond/news/13164681.htm" target="_blank">
+                    刚需果断出手 北郊免税两居</a></li>
+            
+                <li>·<a href="http://esf.soufun.com/newsecond/news/13154738.htm" target="_blank">
+                    海淀精装三居降100万 业</a></li>
+            
+                <li>·<a href="http://esf.soufun.com/chushou/3_185833508.htm" target="_blank">
+                    CBD精装三居逆市来袭 升</a></li>
+            
+                <li>·<a href="http://esf.soufun.com/newsecond/news/13164777.htm" target="_blank">
+                    房价变形 房山线学区1居仅</a></li>
+            
+                <li>·<a href="http://esf.soufun.com/newsecond/news/13157633.htm" target="_blank">
+                    六月末楼市收尾 市场供求关</a></li>
+            
+                <li>·<a href="http://esf.soufun.com/chushou/3_188852004.htm" target="_blank">
+                    终极底价！单价1.5w/平</a></li>
+            
+                <li>·<a href="http://esf.soufun.com/newsecond/news/13155137.htm" target="_blank">
+                    内城临铁不限购一居93万 </a></li>
+            
+                <li>·<a href="http://esf.soufun.com/newsecond/news/13153756.htm" target="_blank">
+                    150万购通州免税两居 上</a></li>
+            
+            </ul>
+        </div>
+     </div>
+     <div class="columnbottom"></div>
+     <div class="clear"></div>
+
+
+     
+    <div class="column mt15" id="hlist_27">
+        <div class="columntop"></div>
+        <div class="columncenter">
+        <dl><dt>二手房问答</dt></dl>
+   <form name="formask"  id="formask"  target="_blank" action="http://www.soufun.com/ask/Ask_StepTwo.aspx" method="get" onsubmit="return checkinput();">
+    <dl class="blue ask">
+        <dd>
+          <textarea  onblur="javascript:if(this.value==''){this.value='详细描述您的疑问，有利于为您提供更好的解答。';}" 
+          onfocus="javascript:if(this.value=='详细描述您的疑问，有利于为您提供更好的解答。'){this.value='';}" 
+          id="asktitle" name="asktitle">详细描述您的疑问，有利于为您提供更好的解答。</textarea></dd>
+        <dd>
+          <input type="button" class="btn_ask" value="立即提问" onclick="NewFAQ();" />
+          &nbsp;&nbsp;
+          <input type="button" class="btn_ask" value="搜索答案" onclick="SearchFAQ();" />
+        </dd>       
+
+    <dd>
+		<a href="http://www.soufun.com/ask/ask_8087480.html"target="_blank" class="linkblue" title="北京房子抵押银行贷款是怎样的流程？">
+        北京房子抵押银行贷款是怎样的流..</a>
+	 </dd>
+    
+    <dd>
+		<a href="http://www.soufun.com/ask/ask_8087326.html"target="_blank" class="linkblue" title="二手房交易税如何计算？都跟什么有关">
+        二手房交易税如何计算？都跟什么..</a>
+	 </dd>
+    
+    <dd>
+		<a href="http://www.soufun.com/ask/ask_8087310.html"target="_blank" class="linkblue" title="咨询一下北京各区房价是多少，学区房价格会高很多吗">
+        咨询一下北京各区房价是多少，学..</a>
+	 </dd>
+    
+    <dd>
+		<a href="http://www.soufun.com/ask/ask_8087292.html"target="_blank" class="linkblue" title="近期房价一直在跌，请问北京现在买房能抄底吗？">
+        近期房价一直在跌，请问北京现在..</a>
+	 </dd>
+    
+    <dd>
+		<a href="http://www.soufun.com/ask/ask_8087272.html"target="_blank" class="linkblue" title="哪里有靠谱的房源信息，可参考性高的？">
+        哪里有靠谱的房源信息，可参考性..</a>
+	 </dd>
+     
+     </dl>
+          </form>
+    </div>   
+<div class="clear"></div>
+<script type="text/javascript">
+    var formobj = document.forms.namedItem("formask");
+    function checkinput() {
+        var asktitle = document.getElementById('asktitle');
+        if (formobj) {
+            if (asktitle != undefined && asktitle.value != '' && asktitle.value != '详细描述您的疑问，有利于为您提供更好的解答。') {
+                return true;
+            }
+            else {
+                alert("请先填写标题!");
+                return false;
+            }
+        }
+        else
+            return false;
+    }
+
+
+    function NewFAQ() {
+        if (checkinput()) {
+            formobj.action = "http://www.soufun.com/ask/Ask_StepTwo.aspx";
+            formobj.submit();
+        }
+    }
+    function SearchFAQ() {
+        if (checkinput()) {
+            formobj.action = "http://www.soufun.com/ask/search.aspx";
+            formobj.submit();
+        }
+    }
+   
+</script>
+
+     <div class="columnbottom"></div>
+     <div class="clear"></div>
+     <div></div>
+     <div></div>
+    </div> 
+     </div>
+    <div class="clear"></div>
+    
+    <img height=0 src="http://clickstoren.esf.soufun.com/proj/1010001770,5776-1010012320,3005-1010024693,13148-1010024854,12196-1010029413,13134_BJ_esf_01.gif" width=0 />
+<img height=0 src="http://clickstoren.esf.soufun.com/proj/1010033654,9447-1010035895,13393-1010047814,440-1010048135,4732-1010053193,5368_BJ_esf_01.gif" width=0 />
+<img height=0 src="http://clickstoren.esf.soufun.com/proj/1010055033,13554-1010066562,4570-1010067721,8702-1010094529,12830-1010137343,1927_BJ_esf_01.gif" width=0 />
+<img height=0 src="http://clickstoren.esf.soufun.com/proj/1010143663,9970-1010196899,2398-1010348867,10037-1010679585,3476_BJ_esf_01.gif" width=0 />
+
+<script type="text/javascript" src="http://img.soufun.com/secondhouse/image/esfnew/scripts/Root.ComboBoxNew.js?v=3.20140630"></script>
+
+<script type="text/javascript">
+    var isopenpinggu = 'True';
+    $1("#houselist>li").each(function () {
+        var listContent = this.innerHTML;
+        if (listContent.indexOf("secondhouse/image/fangyuandaquan/xiezilou.jpg") > -1
+        || listContent.indexOf("secondhouse/image/fangyuandaquan/shangpu.jpg") > -1
+        || isopenpinggu.indexOf("False") > -1) {
+            $1("#" + this.id + ">div[class='price']").css("display", "none");
+        }
+    });
+</script>
+<script type="text/javascript">
+    function submitSearch() {
+        var obj = document.forms['form1'];
+        if (obj) obj.submit();
+    }
+
+    function CheckKeyword(ev) {
+        if (document.forms['form1'].keyword.value == '') {
+            ev = ev || window.event;
+            var target = ev.target || ev.srcElement;
+            if (target.nodeType == 1 && target.nodeName == 'A')
+            { target.href = target.href.substring(0, target.href.lastIndexOf('/') + 1); }
+        }
+    }
+    document.getElementById('search').onclick = CheckKeyword;
+</script>
+
+<script type="text/javascript" src="http://img.soufun.com/secondhouse/image/esfnew/scripts/stats/clickm2011.js?v=3.20140630"></script>
+
+<script type="text/javascript">
+    var idn = "bj";
+    Clickstat.eventAdd(window, 'load', function (e) { Clickstat.batchEvent('hlist_', idn); });
+    initLoginWindowdef();
+</script>
+     <!--公用尾文件开始-->
+     <style type="text/css">
+.DivCss20091020WZiColor333 a:link{color:#333;text-decoration:none;}
+.DivCss20091020WZiColor333 a:visited{color:#333;text-decoration:none;}
+.DivCss20091020WZiColor333 a:hover{color:#f00;text-decoration:underline;}
+.DivCss20091020WZiColor333 a:active{color:#f00;}
+.DivCss20091020WZiColorf00 a:link{color:#f00;text-decoration:none;}
+.DivCss20091020WZiColorf00 a:visited{color:#f00;text-decoration:none;}
+.DivCss20091020WZiColorf00 a:hover{color:#f00;text-decoration:underline;}
+.DivCss20091020WZiColorf00 a:active{color:#f00;}
+</style>
+<script type="text/javascript">
+    var $get = function (id) {
+        return document.getElementById(id);
+    }
+    function moreBoxto(numcss1020) {
+        for (j = 0; j < 10; j++) {
+            if ($get('moreBox' + j)) {
+                $get('moreBox' + j).style.display = 'none';
+
+            }
+        }
+        $get('moreBox' + numcss1020).style.display = 'block';
+    }
+    function hidden_moreBoxto(numcss1020) {
+        timeout = setTimeout(function () { $get("moreBox" + numcss1020).style.display = "none"; }, 100);
+    }
+    function show_moreBoxto(numcss1020) {
+        window.clearTimeout(timeout);
+        $get("moreBox" + numcss1020).style.display = "";
+    }
+    function AddFavorite() {
+        var title = document.title;
+        var url = document.location.href;
+        if (window.sidebar) window.sidebar.addPanel(title, url, "");
+        else if (window.opera && window.print) {
+            var mbm = document.createElement('a');
+            mbm.setAttribute('rel', 'sidebar');
+            mbm.setAttribute('href', url);
+            mbm.setAttribute('title', title);
+            mbm.click();
+        }
+        else if (document.all) window.external.addFavorite(url, title);
+    }
+</script>
+<!--20091020搜房网统一版尾-->
+<div class="mt10 clear"></div>
+<div  id="esfbj_71" style="width:960px;height:105px;background:#fff;font-size:12px;font-family:'宋体';clear:both;margin:0 auto;border-top:1px solid #ccc;" class="DivCss20091020WZiColor333">
+	<div style="line-height:20px;text-align:center;margin-top:5px;">
+		<a href="http://www.soufun.com/aboutus/index.asp" target="_blank">关于搜房</a> <span style="font-family: Verdana;">‖</span>
+		<a href="http://www.soufun.com/hezuo_file/house/index.html" target="_blank">网站合作</a> <span style="font-family: Verdana;">‖</span> 
+		<a href="http://esf.soufun.com/aboutus/contactus.html" target="_blank">联系我们</a> <span style="font-family: Verdana;">‖</span>
+		<a href="http://agent.soufun.com/Develop/EsfProductIntroduce/index.html" target="_blank">我要推广</a> <span style="font-family: Verdana;">‖</span>
+		<a href="http://www.soufun.com/zhaopin" target="_blank">招聘信息</a> <span style="font-family: Verdana;">‖</span>
+		<a href="javascript:;" onmouseout="hidden_moreBoxto(1020)" onmouseover="moreBoxto(1020)">各地二手房</a> <span style="font-family: Verdana;">‖</span>
+		
+		<a href="http://esf.soufun.com/sitemap.htm" target="_blank">网站地图</a> <span style="font-family: Verdana;">‖</span>
+				<a href="http://www.soufun.com/service/feedback/LeaveMess.aspx/" target="_blank">意见反馈</a> <span style="font-family: Verdana;">‖</span>
+		<a href="http://wap.soufun.com/xc/mobile.html" target="_blank">手机搜房</a>‖
+		<a href="http://esf.soufun.com/links.htm " target="_blank">更多链接</a>
+	</div>
+	<!--弹出城市 begin-->
+	<div style="position:relative;width:1px;height:1px;z-index:100">
+		<div onMouseOut="hidden_moreBoxto(1020)" onMouseOver="show_moreBoxto(1020);" id="moreBox1020" style="position: absolute; top: -15px; right: 10px ! important; left: 450px; width: 480px; height: 280px; background: none repeat scroll 0% 0% rgb(240, 240, 240); border: 1px solid rgb(153, 153, 153); padding: 10px 10px 0px; line-height: 21px; font-size: 12px; display: none;">
+			<table width="100%" cellspacing="0" cellpadding="0" border="0" class="DivCss20091020WZiColor333">
+  <tbody><tr>
+    <td width="3%"><strong style="color:#f00;">B</strong></td>
+    <td width="18%"><a target="_blank" href="http://esf1.soufun.com/">北京二手房</a></td>
+    <td width="3%">&nbsp;</td>
+    <td width="18%"><a target="_blank" href="http://esf.guilin.soufun.com/">桂林二手房</a></td>
+    <td width="3%">&nbsp;</td>
+    <td width="17%"><a target="_blank" href="http://esf.ly.soufun.com/">洛阳二手房</a></td>
+    <td width="3%">&nbsp;</td>
+    <td width="19%"><a target="_blank" href="http://esf.sjz.soufun.com/">石家庄二手房</a><a target="_blank" href="http://esf.nn.soufun.com/"></a></td>
+    <td width="3%">&nbsp;</td>
+    <td width="13%"><a target="_blank" href="http://esf.xz.soufun.com/">徐州二手房</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.bd.soufun.com/">保定二手房</a></td>
+    <td><strong style="color:#f00;">H</strong></td>
+    <td><a target="_blank" href="http://esf.hz.soufun.com/">杭州二手房</a></td>
+    <td><strong style="color:#f00;">N</strong></td>
+    <td><a target="_blank" href="http://esf.nanjing.soufun.com/">南京二手房</a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.sy.soufun.com/">沈阳二手房</a><a target="_blank" href="http://esf.sanya.soufun.com/"></a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="#">厦门二手房</a></td>
+  </tr>
+  <tr>
+    <td><strong style="color:#f00;">C</strong></td>
+    <td><a target="_blank" href="http://esf.cd.soufun.com/">成都二手房</a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.hn.soufun.com/">海南二手房</a><a target="_blank" href="http://esf.huizhou.soufun.com/"></a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.nc.soufun.com/">南昌二手房</a><a target="_blank" href="http://esf.jn.soufun.com/"></a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.sanya.soufun.com/">三亚二手房</a><a target="_blank" href="http://esf.qd.soufun.com/"></a></td>
+    <td><strong style="color:#f00;">Y</strong></td>
+    <td><a target="_blank" href="http://esf.yc.soufun.com/">宜昌二手房</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.cq.soufun.com/">重庆二手房</a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.huizhou.soufun.com/">惠州二手房</a><a target="_blank" href="http://esf.hrb.soufun.com/"></a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.nb.soufun.com/">宁波二手房</a><a target="_blank" href="http://esf.km.soufun.com/"></a></td>
+    <td><strong style="color:#f00;">T</strong></td>
+    <td><a target="_blank" href="http://esf.tj.soufun.com/">天津二手房</a><a target="_blank" href="http://esf.sh.soufun.com/"></a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.yt.soufun.com/">烟台二手房</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.cs.soufun.com/">长沙二手房</a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.hrb.soufun.com/">哈尔滨二手房</a><a target="_blank" href="http://esf.nm.soufun.com/"></a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.nn.soufun.com/">南宁二手房</a><a target="_blank" href="http://esf.nanjing.soufun.com/"></a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.ts.soufun.com/">唐山二手房</a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.yz.soufun.com/">扬州二手房</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.changchun.soufun.com/">长春二手房</a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.nm.soufun.com/">呼和浩特二手房</a><a target="_blank" href="http://esf.hf.soufun.com/"></a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.nt.soufun.com/">南通二手房</a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.taiyuan.soufun.com/">太原二手房</a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.yinchuan.soufun.com/">银川二手房</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.cz.soufun.com/">常州二手房</a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.hf.soufun.com/">合肥二手房</a><a target="_blank" href="http://esf.hz.soufun.com/"></a></td>
+    <td><strong style="color:#f00;">Q</strong></td>
+    <td><a target="_blank" href="http://esf.qd.soufun.com/">青岛二手房</a><a target="_blank" href="http://esf.nb.soufun.com/"></a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.taizhou.soufun.com/">泰州二手房 </a></td>
+    <td><strong style="color:#f00;">Z</strong></td>
+    <td><a target="_blank" href="http://esf.zz.soufun.com/">郑州二手房</a></td>
+  </tr>
+   <tr>
+    <td width="3%"><strong style="color:#f00;">D</strong></td>
+    <td width="18%"><a target="_blank" href="http://esf.dg.soufun.com/">东莞二手房</a><a target="_blank" href="http://esf1.soufun.com/"></a></td>
+    <td width="3%"><strong style="color:#f00;">J</strong></td>
+    <td width="18%"><a target="_blank" href="http://esf.jn.soufun.com/">济南二手房</a><a target="_blank" href="http://esf.dg.soufun.com/"></a></td>
+    <td width="3%">&nbsp;</td>
+    <td width="17%"><a target="_blank" href="http://esf.qhd.soufun.com/">秦皇岛二手房</a></td>
+    <td width="3%"><strong style="color:#f00;">W</strong></td>
+    <td width="19%"><a target="_blank" href="http://esf.wuhan.soufun.com/">武汉二手房</a><a target="_blank" href="http://esf.nn.soufun.com/"></a></td>
+    <td width="3%">&nbsp;</td>
+    <td width="13%"><a target="_blank" href="http://esf.zh.soufun.com/">珠海二手房</a></td>
+  </tr>
+  <tr>
+    <td height="14">&nbsp;</td>
+    <td><a target="_blank" href="http://esf.dl.soufun.com/">大连二手房</a><a target="_blank" href="http://esf.cd.soufun.com/"></a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.jm.soufun.com/">江门二手房</a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.qz.soufun.com/">泉州二手房</a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.wuxi.soufun.com/">无锡二手房</a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.zs.soufun.com/">中山二手房</a></td>
+  </tr>
+  <tr>
+    <td><strong style="color:#f00;">F</strong></td>
+    <td><a target="_blank" href="http://esf.fz.soufun.com/">福州二手房</a><a target="_blank" href="http://esf.cq.soufun.com/"></a></td>
+    <td><strong style="color:#f00;">K</strong></td>
+    <td><a target="_blank" href="http://esf.km.soufun.com/">昆明二手房</a><a target="_blank" href="http://esf.fz.soufun.com/"></a></td>
+    <td><strong style="color:#f00;">S</strong></td>
+    <td><a target="_blank" href="http://esf.sh.soufun.com/">上海二手房</a><a target="_blank" href="http://esf.km.soufun.com/"></a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.weihai.soufun.com/">威海二手房</a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.wuhan.soufun.com/"></a></td>
+  </tr>
+  <tr>
+    <td><strong style="color:#f00;">G</strong></td>
+    <td><a target="_blank" href="http://esf.gz.soufun.com/">广州二手房</a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.ks.soufun.com/">昆山二手房</a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.sz.soufun.com/">深圳二手房</a><a target="_blank" href="http://esf.nanjing.soufun.com/"></a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.wf.soufun.com/">潍坊二手房</a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.wuxi.soufun.com/"></a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.gy.soufun.com/">贵阳二手房</a><a target="_blank" href="http://esf.changchun.soufun.com/"></a></td>
+    <td><strong style="color:#f00;">L</strong></td>
+    <td><a target="_blank" href="http://esf.lz.soufun.com/">兰州二手房</a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.suzhou.soufun.com/">苏州二手房</a><a target="_blank" href="http://esf.nc.soufun.com/"></a></td>
+    <td><strong style="color:#f00;">X</strong></td>
+    <td><a target="_blank" href="http://esf.xian.soufun.com/">西安二手房</a><a target="_blank" href="http://esf.suzhou.soufun.com/"></a></td>
+    <td>&nbsp;</td>
+    <td><a target="_blank" href="http://esf.xian.soufun.com/"></a></td>
+  </tr>
+</tbody></table>
+			<div style="text-align:right;" class="DivCss20091020WZiColorf00"><a href="http://esf.soufun.com/cities.aspx" target="_blank">进入搜房二手房&gt;&gt;</a></div>
+		</div>
+	</div>
+	<!--弹出城市 end-->
+    <div style="font-family:Verdana;line-height:20px;text-align:center;" >搜房二手房：
+    <a href="http://esf.soufun.com/" target="_blank">二手房</a> 
+    <a href="http://zu.soufun.com/" target="_blank">租房</a> 
+    <a href="http://pinggu.soufun.com/" target="_blank">评估</a> 
+    <a href="http://esf.soufun.com/housing/" target="_blank">小区</a>　
+    <a href="http://esf.soufun.com/housing/letter_A.htm" target="_blank">A</a>
+    <a href="http://esf.soufun.com/housing/letter_B.htm" target="_blank">B</a>
+    <a href="http://esf.soufun.com/housing/letter_C.htm" target="_blank">C</a>
+    <a href="http://esf.soufun.com/housing/letter_D.htm" target="_blank">D</a>
+    <a href="http://esf.soufun.com/housing/letter_E.htm" target="_blank">E</a>
+    <a href="http://esf.soufun.com/housing/letter_F.htm" target="_blank">F</a>
+    <a href="http://esf.soufun.com/housing/letter_G.htm" target="_blank">G</a>
+    <a href="http://esf.soufun.com/housing/letter_H.htm" target="_blank">H</a>
+    <a href="http://esf.soufun.com/housing/letter_I.htm" target="_blank">I</a>
+    <a href="http://esf.soufun.com/housing/letter_J.htm" target="_blank">J</a>
+    <a href="http://esf.soufun.com/housing/letter_K.htm" target="_blank">K</a>
+    <a href="http://esf.soufun.com/housing/letter_L.htm" target="_blank">L</a>
+    <a href="http://esf.soufun.com/housing/letter_M.htm" target="_blank">M</a>
+    <a href="http://esf.soufun.com/housing/letter_N.htm" target="_blank">N</a>
+    <a href="http://esf.soufun.com/housing/letter_O.htm" target="_blank">O</a>
+    <a href="http://esf.soufun.com/housing/letter_P.htm" target="_blank">P</a>
+    <a href="http://esf.soufun.com/housing/letter_Q.htm" target="_blank">Q</a>
+    <a href="http://esf.soufun.com/housing/letter_R.htm" target="_blank">R</a>
+    <a href="http://esf.soufun.com/housing/letter_S.htm" target="_blank">S</a>
+    <a href="http://esf.soufun.com/housing/letter_T.htm" target="_blank">T</a>
+    <a href="http://esf.soufun.com/housing/letter_U.htm" target="_blank">U</a>
+    <a href="http://esf.soufun.com/housing/letter_V.htm" target="_blank">V</a>
+    <a href="http://esf.soufun.com/housing/letter_W.htm" target="_blank">W</a>
+    <a href="http://esf.soufun.com/housing/letter_X.htm" target="_blank">X</a>
+    <a href="http://esf.soufun.com/housing/letter_Y.htm" target="_blank">Y</a>
+    <a href="http://esf.soufun.com/housing/letter_Z.htm" target="_blank">Z</a>
+     </div>
+	<div style="font-family:Verdana;line-height:20px;text-align:center;">Copyright &copy; <script language="javascript">
+	                                                                                          var dt = new Date();
+	                                                                                          y = dt.getFullYear(); //获取年(四位)
+	                                                                                          document.write(y)</script> SouFun Holdings Limited, All Rights Reserved</div>
+	<div style="line-height:23px;text-align:center;position:relative;">搜房公司-<a href="http://esf.soufun.com/" target="_blank"><strong>北京二手房</strong></a>网 版权所有<a target="_blank" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0102000110800002"><img style="border:0pt none;position:absolute;right:249px;top:-18px;" src="http://img.soufun.com/secondhouse/image/hezuo/beian_min.gif"/></a></span></div>
+	<div style="line-height:20px;text-align:center;">举报电话：<span style="font-family:Verdana;">010-56318764</span> 举报邮箱：<a href="mailto:jubao@soufun.com" style="font-family:Verdana;">jubao@soufun.com</a></div>
+</div>
+
+<script type="text/javascript" src="http://c.wrating.com/a1.js?v=3.20140630"></script>
+<script type="text/javascript" src="http://img.soufun.com/secondhouse/image/getacc.js?v=3.20140630"></script>
+
+    <!--公用尾文件结束-->
+    <!--公用尾文件开始-->
+    <script language="javascript" type="text/javascript">
+    var isMinNS4 = (navigator.appName.indexOf("Netscape") >= 0 &&
+                parseFloat(navigator.appVersion) >= 4) ? 1 : 0;
+    var isMinNS5 = (navigator.appName.indexOf("Netscape") >= 0 &&
+                parseFloat(navigator.appVersion) >= 5) ? 1 : 0;
+    var isMinIE4 = (document.all) ? 1 : 0;
+    var isMinIE5 = (isMinIE4 && navigator.appVersion.indexOf("5.") >= 0) ? 1 : 0;
+    var isMacIE = (isMinIE4 && navigator.userAgent.indexOf("Mac") >= 0) ? 1 : 0;
+    var getFFVersion = navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1];
+
+    var isFFIE = (navigator.userAgent.indexOf("Firefox") >= 0) ? 1 : 0;
+
+    //extra height in px to add to iframe in FireFox 1.0+ browsers   
+    var FFextraHeight = getFFVersion < 1.5 ? 16 : 0;
+    function getLayer(name) {
+        if (isMinNS5)
+            return document.getElementById(name);
+        else if (isMinIE4)
+            return eval('document.all.' + name);
+        else if (isMinNS4)
+            return findLayer(name, document);
+
+        return null;
+    }
+
+    // JavaScript Document
+
+    //=======================================================
+    //函数名称：getObject(objectId)
+    //          参数objectId:控件的ID值
+    //函数功能：获得控件的ID值
+    //返 回 值：ture(获得ID值) false(获取ID失败)
+    //=======================================================
+
+    function getObject(objectId) {
+        if (document.getElementById && document.getElementById(objectId)) {
+            // W3C DOM
+            return document.getElementById(objectId);
+        } else if (document.all && document.all(objectId)) {
+            // MSIE 4 DOM
+            return document.all(objectId);
+        } else if (document.layers && document.layers[objectId]) {
+            // NN 4 DOM.. note: this won't find nested layers
+            return document.layers[objectId];
+        } else {
+            return false;
+        }
+    }
+    // 显示列表框
+    function displayList() {
+        var h = getObject('hcity').offsetHeight;  // 内容容器hcity的初始高度（这时高度为：0）
+        var w = getObject('hcity').offsetWidth;  // 内容容器hcity的初始高度（这时宽度为：0）
+        var max_h = 75; // 容器的最大高度
+        var max_w = 75; // 容器的最大宽度
+        var anim = function () {
+            h += 4; // 每次递增50像素
+            //如果增加的高度开始超过容的最大高度
+            if (h >= max_h) {
+                getObject('hcity').style.height = "75px"; // 工期高度为75px(因为我们只希望容器这么高)       
+                if (tt) { window.clearInterval(tt); } // 如果高度在每2毫秒递减，则清楚改行为（如果不清楚，程序将一直自动运行高度每2毫秒递减）
+            }
+            else { // 如果增加中的容器高度没有超过287px
+                getObject('hcity').style.display = "block"; // 让容器可见（这样我们才能够看到容器在增高的效果）
+                getObject('hcity').style.height = h + "px"; // 容器高度不断的以50px递增
+            }
+        }
+
+        var tt = window.setInterval(anim, 2);  // 设置每2毫秒循环一次（每2毫秒，运行一次anim[容器的高度递减50px]）	
+    }
+    // 隐藏列表框
+    function hiddenList() {
+        var h = getObject('hcity').offsetHeight; // 内容容器hcity的初始高度（这时高度为：287px）
+        var anim = function () {
+            h -= 4; // 每次递减50像素
+
+            if (h <= 5) {
+                getObject('hcity').style.display = "none"; // 内容容器不可见（当容器高度小于5px）
+                //getObject('tabclass1').style.backgroundImage="url(http://img.soufun.com/rent/image/newrent/headb.gif) no-repeat top right"; 
+                if (tt) { window.clearInterval(tt); }
+            }
+            else {
+                getObject('hcity').style.height = h + "px"; // // 容器高度不断的以50px递减 
+            }
+        }
+
+        var tt = window.setInterval(anim, 2); // 设置每2毫秒循环一次（每2毫秒，运行一次anim[容器的高度递减50px]）
+    }
+    //=======================================================
+    //函数名称：showClassList()
+    //函数功能：隐藏-显示级分类列表框（hcity）
+    //返 回 值：无
+    //=======================================================
+    function showClassList() {
+        // 如果内容容器为不可见的display:none
+        if (getObject('hcity').style.display == "none") {
+            displayList(); // 显示内容框
+        }
+        else { // 如果内容容器为可见的display:block
+            hiddenList(); // 隐藏内容框
+        }
+    }
+       
+</script>  
+    <!--公用尾文件结束-->
+    <!--用户行为分析开始-->
+    <script type="text/javascript" src="http://img2s.soufun.com/js_ub/_ub.js?v=201406161600s"></script> 
+<script type="text/javascript">
+    _ub.city = '北京';
+    _ub.biz = 'e';
+    _ub.location = 0;
+
+    var ubb=1;
+    var ubp={"e0":"1^-1^1","ew":"^1000","ea":3};
+    if(ubp && ubp != null)
+    {
+        _ub.collect(ubb,ubp);
+    }
+
+    var objcon = document.getElementById("a_savecondition");
+    if(objcon && objcon != null)
+    {
+        objcon.onmouseup=function()
+        {
+            if(ubp && ubp != null)
+            {
+                _ub.collect(2,ubp);
+            }
+        }
+    }
+</script>
+
+    <!--用户行为分析结束-->
+</body>
+</html>
